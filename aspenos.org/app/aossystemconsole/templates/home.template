@@ -1,0 +1,7 @@
+
+<ul>
+  <li><a href="[tag:form_action]?webevent_name=installed_apps"><font face="Arial, Helvetica, sans-serif" size="3">Applications</font></a></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="3"><a href="[tag:form_action]?webevent_name=prin_list">Principals</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="3"><a href="[tag:form_action]?webevent_name=role_list">Roles</a></font></li>
+</ul>
+

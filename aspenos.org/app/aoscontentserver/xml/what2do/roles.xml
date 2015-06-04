@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<RoleDefs>
+
+<RoleDef id='1' name='user' role_group='users' vendor='aspenos'/>
+<RoleDef id='2' name='admin' role_group='admins' vendor='aspenos'/>
+
+</RoleDefs>
+

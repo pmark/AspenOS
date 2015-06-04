@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<ERTDefs>
+
+<ERTDef registry_group='aosconsole'>
+
+<WebEventDef id='9'>
+<ResourceDef id='9'>
+<TemplateDef id='9'>
+<RoleDef id='9'/>
+</TemplateDef>
+</ResourceDef>
+</WebEventDef>
+
+</ERTDef>
+
+
+<ERTDef registry_group='screentest'>
+
+<WebEventDef id='1'>
+<ResourceDef id='1'>
+<TemplateDef id='1'>
+<RoleDef id='9'/>
+</TemplateDef>
+</ResourceDef>
+</WebEventDef>
+
+
+<WebEventDef id='2'>
+<ResourceDef id='2'>
+<TemplateDef id='4'>
+<RoleDef id='0'/>
+</TemplateDef>
+<TemplateDef id='2'>
+<RoleDef id='1'/>
+</TemplateDef>
+</ResourceDef>
+<ResourceDef id='3'>
+<TemplateDef id='3'>
+<RoleDef id='1'/>
+</TemplateDef>
+</ResourceDef>
+</WebEventDef>
+
+
+<WebEventDef id='3'>
+<ResourceDef id='4'>
+<TemplateDef id='5'>
+<RoleDef id='0'/>
+</TemplateDef>
+</ResourceDef>
+<ResourceDef id='5'>
+<TemplateDef id='6'>
+<RoleDef id='0'/>
+</TemplateDef>
+</ResourceDef>
+</WebEventDef>
+
+
+<WebEventDef id='4'>
+<ResourceDef id='6'>
+<TemplateDef id='7'>
+<RoleDef id='1'/>
+</TemplateDef>
+<TemplateDef id='8'>
+<RoleDef id='2'/>
+</TemplateDef>
+</ResourceDef>
+<ResourceDef id='7'>
+<TemplateDef id='9'>
+<RoleDef id='2'/>
+</TemplateDef>
+</ResourceDef>
+</WebEventDef>
+
+</ERTDef>
+
+</ERTDefs>
+

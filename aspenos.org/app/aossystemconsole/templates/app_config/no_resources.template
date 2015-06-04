@@ -1,0 +1,9 @@
+<form method="post" action="[tag:form_action]" name="[tag:form_name]">
+
+  <p><font face="Arial, Helvetica, sans-serif" size="3">There are no resources 
+    for event <b><i>[tag:sel_event_name]</i></b> yet.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif" size="2" color="#3399FF">Click this 
+    <input type="submit" name="btn_add" value="add">
+    button to create a new resource.</font></p>
+
+<input type="hidden" name="webevent_name" value="aec_add_resource">

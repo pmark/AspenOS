@@ -1,0 +1,16 @@
+
+            <tr bgcolor="#FFFFFF"> 
+              <td> 
+                <div align="center"> 
+                  
+      <input type="radio" name="rb_[tag:vendor_sys_name]" value="[tag:app_id]">
+                </div>
+              </td>
+              <td> 
+                <p><font face="Arial, Helvetica, sans-serif">
+				[tag:app_display_name]
+				</font></p>
+              </td>
+            </tr>
+
+

@@ -1,0 +1,11 @@
+
+ (
+name text UNIQUE,
+alt text,
+type text,
+default_image text,
+mouseover_image text,
+select_image text,
+style_class text,
+label text
+)

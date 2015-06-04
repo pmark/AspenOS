@@ -1,0 +1,20 @@
+ 
+<p><br>
+  <font face="Courier New, Courier, mono" size="2"></font></p>
+<table border="0">
+  <tr>
+    <td><font face="Arial, Helvetica, sans-serif" size="2">role IDs:&nbsp;</font> 
+      <input type="text" name="txt_role_id" size="10">
+      <input type="submit" name="btn_assign_roles" value="assign role(s) to template" 
+	  	onClick="setNextEventName('aec_assign_template_roles')">
+    </td>
+  </tr>
+  <tr bgcolor="#CCCCCC"> 
+    <td><font face="Courier New, Courier, mono" size="2"><B>*</B> Separate role IDs with 
+      a comma.<br>
+      <B>*</B> Special role IDs are<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;:&nbsp;&nbsp;&nbsp;<i>default</i><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-1&nbsp;:&nbsp;&nbsp;&nbsp;<i>all roles</i></font></td>
+  </tr>
+</table>
+<p>&nbsp;</p>

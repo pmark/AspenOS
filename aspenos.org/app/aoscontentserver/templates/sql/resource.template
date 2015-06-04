@@ -1,0 +1,4 @@
+ (
+resource_id serial PRIMARY KEY,
+name text unique
+)

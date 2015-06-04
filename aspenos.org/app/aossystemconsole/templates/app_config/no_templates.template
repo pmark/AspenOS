@@ -1,0 +1,9 @@
+<form method="post" action="[tag:form_action]" name="[tag:form_name]">
+
+  <p><font face="Arial, Helvetica, sans-serif" size="3">There are no templates 
+    for <i>[tag:app_display_name]</i> yet.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif" size="2" color="#3399FF">Click this 
+    <input type="submit" name="btn_add" value="add">
+    button to add a template.</font></p>
+
+<input type="hidden" name="webevent_name" value="add_template">

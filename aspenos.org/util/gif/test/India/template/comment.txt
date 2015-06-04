@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Rana Bhattacharyya</title>
+</head>
+
+<body bgcolor="#CECE9D">
+
+<h1 align="center"><font size="6" face="Arial" color="#663300">${caption}</font></h1>
+<div align="center">
+  <center>
+  <table border="0" width="100%" bgcolor="#CCFFCC" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="100%">
+        <p align="center"><font size="4"><b>${message}</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>&nbsp;<font face="Arial" size="3">Total Comments : <b>${guestName.size}</b></font></p>
+
+${ITR}{INDEX 0 THRU ${guestName.size}} {  
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" bgcolor="#C0C0C0"><b><font face="Arial" size="3">Name : <i>${guestName[${INDEX}]}</i></font></b></td>
+  </tr>
+  <tr>
+    <td width="50%" bgcolor="#CCDDEE"><font face="Arial" size="3"><b>Email :</b> <a href="mailto:${guestEmail[${INDEX}]}">${guestEmail[${INDEX}]}</a></font></td>
+    <td width="50%" bgcolor="#CCDDEE"><font face="Arial" size="3"><b>Submit Time : </b>${guestTime[${INDEX}]}</font> </td>
+  </tr>
+  <tr>
+    <td width="50%" bgcolor="#C0C0C0" colspan="2">&nbsp;<font face="Arial" size="3">${guestComment[${INDEX}]}</font></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>}
+
+</body>
+
+</html>

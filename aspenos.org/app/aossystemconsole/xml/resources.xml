@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<ResourceDefs>
+
+<!-- App Installation -->
+<ResourceDef name='home'/>
+<ResourceDef name='installed_apps'/>
+<ResourceDef name='install1'/>
+<ResourceDef name='install2'/>
+<ResourceDef name='install3'/>
+
+<!-- App Configuration -->
+<ResourceDef name='add_template'/>
+<ResourceDef name='app_config'/>
+<ResourceDef name='choose_template'/>
+<ResourceDef name='edit_template'/>
+<ResourceDef name='editor_update'/>
+<ResourceDef name='recache_templates'/>
+<ResourceDef name='remove_template'/>
+<ResourceDef name='template_editor'/>
+<ResourceDef name='update_template'/>
+<ResourceDef name='uninstall'/>
+<ResourceDef name='do_uninstall'/>
+
+<!-- Event Configuration -->
+<ResourceDef name='aec_add_event'/>
+<ResourceDef name='aec_add_resource'/>
+<ResourceDef name='aec_add_resource_template'/>
+<ResourceDef name='aec_assign_template_roles'/>
+<ResourceDef name='aec_choose_event'/>
+<ResourceDef name='aec_choose_resource'/>
+<ResourceDef name='aec_edit_event'/>
+<ResourceDef name='aec_edit_resource'/>
+<ResourceDef name='aec_remove_event'/>
+<ResourceDef name='aec_remove_resource'/>
+<ResourceDef name='aec_update_event'/>
+<ResourceDef name='aec_update_resource'/>
+
+</ResourceDefs>
+

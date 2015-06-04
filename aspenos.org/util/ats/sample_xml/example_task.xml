@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<example_task>
+
+<TaskSet year='*' month='*' date='*' 
+   hour='*' minute='*' recur_count='3'>
+
+	<Task 
+	   class_name='org.aspenos.util.ats.ExampleTask'
+	   my_param='an example param'/>
+
+</TaskSet>
+
+</example_task>

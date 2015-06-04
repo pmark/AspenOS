@@ -1,0 +1,92 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>
+</title>
+</head>
+
+<script language="javascript">
+
+function setNextEventId(nextId) {
+	if (nextId != "") {
+		document.[tag:form_name].webevent_id.value = nextId;
+	}
+}
+
+function setNextEventName(nextName) {
+	if (nextName != "") {
+		document.[tag:form_name].webevent_name.value = nextName;
+	}
+}
+
+
+</script>
+
+
+<body bgcolor="#FFFFFF">
+<table width="640" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="2" width="100">
+	<img src="/aspenos/images/[tag:main_logo_image]"></td>
+    <td rowspan="2" width="20">
+	<img src="/aspenos/images/dot_clear.gif" width="20" height="5"></td>
+    <td height="60">
+	<font face="Arial" size="4">[tag:main_title]<br>
+	<font size="3">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	[tag:sub_titles]</font> 
+	</td>
+  </tr>
+  <tr> 
+    <td> 
+      <div align="right">[tag:page_menu]</div>
+    </td>
+  </tr>
+</table>
+<table width="640" border="0">
+  <tr> 
+    <td bgcolor="[tag:header_sep_color]">
+	<img src="/aspenos/images/dot_clear.gif" width="10" height="5"> 
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <p align="right">[tag:feature_menu]</p>
+    </td>
+  </tr>
+  <tr> 
+    <td>[tag:feature_body]</td>
+  </tr>
+  <tr> 
+    <td bgcolor="[tag:footer_sep_color]">
+	<img src="/aspenos/images/dot_clear.gif" width="10" height="5"> 
+    </td>
+  </tr>
+</table>
+	
+	
+<table width="640" border="0" height="56">
+  <tr> 
+    <td> 
+      <div align="center"></div>
+    </td>
+    <td rowspan="2"> 
+      <div align="center">[tag:footer_menu]</div>
+    </td>
+    <td width="150"> 
+      <div align="center"></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="163"> 
+      <div align="center"></div>
+    </td>
+    <td> 
+      <div align="center">[tag:footer_logo_image]</div>
+    </td>
+  </tr>
+</table>
+	
+	
+</body>
+</html>

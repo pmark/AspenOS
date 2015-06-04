@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<ERTDefs>
+
+<ERTDef registry_group='aos_mail'>
+
+<WebEventDef name='form_mail'>
+ <ResourceDef name='form_mail'>
+  <TemplateDef name='dummy'>
+   <RoleDef name='all'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+
+</ERTDef>
+
+</ERTDefs>
+

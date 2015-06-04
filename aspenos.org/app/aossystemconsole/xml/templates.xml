@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<TemplateDefs>
+
+<!-- ==== HOME ======================================== -->
+<TemplateDef name='home' file_path='home.template'/>
+
+
+<!-- ==== GENERAL ===================================== -->
+<TemplateDef name='redir_page' 
+	file_path='redir_page.template'/>
+<TemplateDef name='edit_wrapper' 
+	file_path='app_config/edit_wrapper.template'/>
+<TemplateDef name='app_config' 
+	file_path='app_config/app_config.template'/>
+<TemplateDef name='recache_templates' 
+	file_path='app_config/recache_templates.template'/>
+<TemplateDef name='uninstall' 
+	file_path='app_config/uninstall.template'/>
+<TemplateDef name='uninstall_result' 
+	file_path='app_config/uninstall_result.template'/>
+
+
+<!-- ==== APP LIST ==================================== -->
+<TemplateDef name='installed_app_body' 
+	file_path='app_list/installed_app_body.template'/>
+<TemplateDef name='installed_app_sep' 
+	file_path='app_list/installed_app_sep.template'/>
+<TemplateDef name='one_installed_app' 
+	file_path='app_list/one_installed_app.template'/>
+<TemplateDef name='vendor_installed_apps' 
+	file_path='app_list/vendor_installed_apps.template'/>
+<TemplateDef name='vendor_installed_apps_wrapper' 
+	file_path='app_list/vendor_installed_apps_wrapper.template'/>
+
+
+<!-- ==== INSTALL ===================================== -->
+<TemplateDef name='install1' 
+	file_path='app_install/install1.template'/>
+<TemplateDef name='install2' 
+	file_path='app_install/install2.template'/>
+<TemplateDef name='install3' 
+	file_path='app_install/install3.template'/>
+
+
+<!-- ==== TEMPLATE EDITOR============================== -->
+<TemplateDef name='template_editor' 
+	file_path='app_config/template_editor/editor.template'/>
+<TemplateDef name='editor_update' 
+	file_path='app_config/template_editor/editor_update.template'/>
+	
+
+<!-- ==== EVENT ======================================= -->
+<TemplateDef name='aec_choose_event' 
+	file_path='app_config/choose_event.template'/>
+<TemplateDef name='aec_event_list' 
+	file_path='app_config/event_list.template'/>
+<TemplateDef name='aec_event_fields' 
+	file_path='app_config/event_fields.template'/>
+<TemplateDef name='aec_no_events' 
+	file_path='app_config/no_events.template'/>
+<TemplateDef name='aec_update_event' 
+	file_path='app_config/update_event.template'/>
+<TemplateDef name='event_extra_stuff' 
+	file_path='app_config/event_extra_stuff.template'/>
+
+
+<!-- ==== RESOURCE ==================================== -->
+<TemplateDef name='aec_choose_resource' 
+	file_path='app_config/choose_resource.template'/>
+<TemplateDef name='resource_list' 
+	file_path='app_config/resource_list.template'/>
+<TemplateDef name='aec_resource_fields' 
+	file_path='app_config/resource_fields.template'/>
+<TemplateDef name='aec_no_resources' 
+	file_path='app_config/no_resources.template'/>
+<TemplateDef name='aec_resource_extra_stuff' 
+	file_path='app_config/resource_extra_stuff.template'/>
+<TemplateDef name='aec_update_resource' 
+	file_path='app_config/update_resource.template'/>
+
+
+<!-- ==== RESOURCE TEMPLATES ========================== -->
+<TemplateDef name='aec_add_res_template' 
+	file_path='app_config/add_res_template.template'/>
+<TemplateDef name='aec_no_resource_templates' 
+	file_path='app_config/no_resource_templates.template'/>
+<TemplateDef name='resource_template_extra_stuff' 
+	file_path='app_config/resource_template_extra_stuff.template'/>
+
+
+<!-- ==== TEMPLATE ==================================== -->
+<TemplateDef name='choose_template' 
+	file_path='app_config/choose_template.template'/>
+<TemplateDef name='template_list' 
+	file_path='app_config/template_list.template'/>
+<TemplateDef name='template_fields' 
+	file_path='app_config/template_fields.template'/>
+<TemplateDef name='template_extra_stuff' 
+	file_path='app_config/template_extra_stuff.template'/>
+<TemplateDef name='no_templates' 
+	file_path='app_config/no_templates.template'/>
+
+
+</TemplateDefs>
+

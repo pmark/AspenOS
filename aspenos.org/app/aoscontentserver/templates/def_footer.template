@@ -1,0 +1,29 @@
+</td></tr></table>
+	
+<table width="640" border="0">
+  <tr> 
+    <td height="0" bgcolor="[tag:footer_sep_color]"><img src="/aspenos/images/dot_clear.gif" width="10" height="1"></td>
+  </tr>
+</table>
+	
+<table width="640" border="0" height="56">
+  <tr> 
+    <td></td>
+    <td rowspan="2"> 
+      <div align="center">[tag:footer_menu]</div>
+    </td>
+    <td width="150"> 
+      <div align="center"></div>
+    </td>
+  </tr>
+  <tr> 
+    <td></td>
+    <td> 
+      <div align="center"> <img src="/aspenos/images/[tag:footer_logo_image]"></div>
+    </td>
+  </tr>
+</table>
+	
+	
+</body>
+</html>

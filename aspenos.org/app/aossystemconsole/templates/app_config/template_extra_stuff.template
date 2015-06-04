@@ -1,0 +1,20 @@
+ 
+<p><br>
+  <font face="Courier New, Courier, mono" size="2"></font></p>
+<table border="0">
+  <tr>
+    <td> 
+      <div align="center">
+        <input type="submit" name="btn_launch_editor" 
+			value="launch template editor" 
+	  		onClick="setNextEventName('template_editor')">
+      </div>
+    </td>
+  </tr>
+  <tr bgcolor="#CCCCCC"> 
+    <td><font face="Courier New, Courier, mono" size="2"><B>*</B> The template 
+      editor allows you to upload new files and edit the HTML of templates.<br>
+      </font></td>
+  </tr>
+</table>
+<p>&nbsp;</p>

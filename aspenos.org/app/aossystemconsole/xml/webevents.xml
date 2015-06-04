@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<WebEventDefs>
+
+<WebEventDef name='home' 
+	classname='org.aspenos.app.aossystemconsole.eh.Home'/>
+
+<WebEventDef name='installed_apps' 
+	classname='org.aspenos.app.aossystemconsole.eh.InstalledApps'/>
+
+
+<!-- App Installation -->
+<WebEventDef name='install1' 
+	classname='org.aspenos.app.aossystemconsole.eh.Install1'/>
+
+<WebEventDef name='install2' 
+	classname='org.aspenos.app.aossystemconsole.eh.Install2'/>
+
+<WebEventDef name='install3' 
+	classname='org.aspenos.app.aossystemconsole.eh.Install3'/>
+
+
+<!-- App Configuration -->
+<WebEventDef name='add_template' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.AddTemplate'/> 
+
+<WebEventDef name='app_config' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.AppConfig'/> 
+
+<WebEventDef name='choose_template' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.ChooseTemplate'/> 
+
+<WebEventDef name='edit_template' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.EditTemplate'/> 
+
+<WebEventDef name='editor_update' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.EditorUpdate'/> 
+
+<WebEventDef name='recache_templates' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.RecacheTemplates'/> 
+
+<WebEventDef name='remove_template' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.RemoveTemplate'/> 
+
+<WebEventDef name='template_editor' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.TemplateEditor'/> 
+
+<WebEventDef name='update_template' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.UpdateTemplate'/> 
+
+<WebEventDef name='uninstall' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.Uninstall'/> 
+
+<WebEventDef name='do_uninstall' 
+	classname='org.aspenos.app.aossystemconsole.eh.appconfig.DoUninstall'/> 
+
+
+<!-- Event Configuration -->
+<!-- ADD -->
+<WebEventDef name='aec_add_event' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.AddEvent'/> 
+
+<WebEventDef name='aec_add_resource' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.AddResource'/> 
+
+<WebEventDef name='aec_add_resource_template' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.AddResourceTemplate'/> 
+
+<WebEventDef name='aec_assign_template_roles' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.AssignTemplateRoles'/> 
+
+
+<!-- CHOOSE -->
+<WebEventDef name='aec_choose_event' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.ChooseEvent'/> 
+
+<WebEventDef name='aec_choose_resource' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.ChooseResource'/> 
+
+
+<!-- EDIT -->
+<WebEventDef name='aec_edit_event' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.EditEvent'/> 
+
+<WebEventDef name='aec_edit_resource' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.EditResource'/> 
+
+
+<!-- REMOVE -->
+<WebEventDef name='aec_remove_event' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.RemoveEvent'/> 
+
+<WebEventDef name='aec_remove_resource' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.RemoveResource'/> 
+
+
+<!-- UPDATE -->
+<WebEventDef name='aec_update_event' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.UpdateEvent'/> 
+
+<WebEventDef name='aec_update_resource' 
+	classname='org.aspenos.app.aossystemconsole.eh.eventconfig.UpdateResource'/> 
+
+
+</WebEventDefs>
+
+
+
+

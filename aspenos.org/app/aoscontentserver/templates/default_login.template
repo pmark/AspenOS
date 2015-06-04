@@ -1,0 +1,59 @@
+<html>
+<title>AspenOS Login</title>
+<body bgcolor="#FFFFFF">
+
+<form action="[tag:form_action]" method="post">
+  <table width="250" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="213" border="1" bordercolordark="#000000" bordercolorlight="#000000" align="center">
+          <tr align="center"> 
+            <td> 
+              <div align="center"><font face="arial"><strong><font color="#666666" size="3" face="Verdana, Arial, Helvetica, sans-serif">P</font><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">lease 
+                <strong><font size="3">L</font></strong>ogin</font></strong></font></div>
+            </td>
+          </tr>
+        </table>
+        <div align="center"><br>
+        </div>
+        <table noborder>
+          <tr> 
+            <td width="42">&nbsp;</td>
+            <td width="196"> <font color="#996633" face="Verdana, Arial, Helvetica, sans-serif" size="2">user 
+              name</font><br>
+              <input type=text name=username>
+            </td>
+          </tr>
+          <tr> 
+            <td width="42">&nbsp;</td>
+            <td width="196"><font color="#996633" size="2" face="Verdana, Arial, Helvetica, sans-serif">password</font><br>
+              <input type=password name=password value=''>
+            </td>
+          </tr>
+          <tr> 
+            <td width="42"> <font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b> 
+              </b></font></td>
+            <td width="196"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><b> 
+              &nbsp; </b></font></td>
+          </tr>
+          <tr> 
+            <td width="42">&nbsp;</td>
+            <td width="196" align="right"><font color=0000EE><font face="arial"> 
+              <input type=submit name=command value="log in">
+              </font></font> </td>
+          </tr>
+        </table>
+        <p><font color=0000EE><font color=0000EE><font face="arial">
+          </font></font></font></p>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+</body></html>
+
+
+
+
+

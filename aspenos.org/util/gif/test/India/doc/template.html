@@ -1,0 +1,419 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+    <title>Template</title>
+</head>
+<body bgcolor="#CECE9D">
+
+<h1 align="center"><font color="#663300">Template</font></h1>
+&nbsp;<p>This library might be useful for Java servlet programmers. It is very simple.
+But it really works.&nbsp;
+It is totally based on recursion. It supports if-then-else, for, iterator,
+variable, string constant.&nbsp;The limitation of this template library is that
+the maximum template file size is 32Kb. There is one way we can solve this
+problem. As <i>MyTemplate </i>class does not close the <i>OutputStream </i>we
+can load multiple template files.
+<br></p>
+<p><a href="../myCode.jar">Download</a> the whole package.&nbsp;</p>
+<p>&nbsp;</p>
+<p><b><font size=+1>Tag Syntax</font></b>
+<br>Tag syntax for putting custom/variable Key value pair (properties/hash
+table) in the template files:
+<p>The customized templates should have key embedded in the form of ${mykey}
+anywhere within the file.
+<p>The API <tt>loadFile(Writer out, Hashtable hash) </tt>will replace the
+<tt>${mykey}</tt>
+with corresponding <tt>myvalue</tt> from the hashtable.
+<br>For example,&nbsp; if <tt>myvalue</tt> is <tt>“Hello World”</tt>
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#FFFFCC" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/head>&lt;/title></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;h1>${mykey}&lt;/h1></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#CCFFFF" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/head>&lt;/title></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;h1>Hello World&lt;/h1></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p>The actual replacement is done using <tt>toString()</tt> function. What
+that means is that, in case of any other object in <tt>myvalue</tt>, it
+gets the string representation.
+<p>For example,&nbsp; if <tt>myvalue = new Integer(122);</tt>
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#FFFFCC" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/head>&lt;/title></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;h1>You are visitor number ${mykey}&lt;/h1></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#CCFFFF" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/head>&lt;/title></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;h1>You are visitor number 122&lt;/h1></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p>If the hash table does not contain relevant mykey, the <tt>${mykey}</tt>
+in the template will be ignored. We can also access null value using <tt>${NULL}</tt>.
+<p>Example:
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#FFFFCC" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title> &lt;/title>&lt;/head></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&nbsp; &lt;h1>Welcome to ${comp_name}&lt;/h1></tt>
+<br><tt>&lt;/body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p>If <tt>comp_name</tt> does not have a corresponding value in the hash
+table, the output would be
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#CCFFFF" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title> &lt;/title>&lt;/head></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&nbsp; &lt;h1>Welcome to &lt;/h1></tt>
+<br><tt>&lt;/body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p><b><font size=+1>The Block Construct</font></b>
+<br>In the following sections, we define Block as a chunk of HTML code/javascript/css
+along with any of the constructs defined in this doc.
+<br>&nbsp;
+<p><b><font size=+1>The var Construct</font></b>
+<br>Any object is defined to be a var.
+<p><b>.size</b>
+<br>The suffix .size has a special meaning. It returns the size of the
+container.
+<p><b>.last</b>
+<br>The last element of the vector. In case of any other object it returns
+the object itself.
+<p><b>[n]</b>
+<br>One can get the value at a particular index, n using $(var[n]). If
+n is not an integer ${var[n]} = null.
+<br>In case of multi-dimensional array we have to use ${var[i,j,k]}.
+<p>If the object var-hash under consideration is not a vector, then the
+following rules:
+<br>&nbsp; <tt>${Var.size} = new Integer(1)</tt>
+<br><tt>&nbsp;${Var[n]}&nbsp;&nbsp; = var-hash if n == 0</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= null if n not equals 0</tt>
+<p>In case of vector var-hash,
+<br><tt>&nbsp;${Var.size} = new Integer(var-templ.size())</tt>
+<br><tt>&nbsp;${Var[n]}&nbsp;&nbsp; = var-temp.elementAt(n) if 0 &lt;=
+n &lt; var-templ.size</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= null otherwise</tt>
+<p>In case the ${var} is not found in the hash table,
+<br><tt>&nbsp;${Var.size} = new Integer(0)</tt>
+<br><tt>&nbsp;${Var[n]}&nbsp;&nbsp; = null</tt>
+<br>&nbsp;
+<p><b><font size=+1>The if-then-else Construct</font></b>
+<p>The template may contain <tt>if-then-else</tt> logic. The corresponding
+grammar is as follows:
+<p><tt>&nbsp;${IF}[whitespace]*{condition}[whitespace]*{block}[{block}]</tt>
+<p><tt>&nbsp;whitespace – any combination of “ “, “\t”, “\r”, “\n”, “\f”</tt>
+<br><tt>&nbsp;condition&nbsp; - var|String ==|!=|IN var|String</tt>
+<br><tt>&nbsp;var&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ${String}</tt>
+<p>The last optional section in the grammar represents the optional <tt>else</tt>
+part
+<br><tt>Null</tt> value can be represented using <tt>${NULL}</tt>.
+<p>Example:
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#FFFFCC" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/title>&lt;/head></tt>
+<br><tt>&lt;body></tt>
+<br><tt>${IF}{${user_name} == Administrator} {</tt>
+<br><tt>&nbsp;Customization Page}{</tt>
+<br><tt>&nbsp;Welcome ${user_name}</tt>
+<br><tt>}</tt>
+<br><tt>&lt;/body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p>If <tt>user_name == Administrator</tt>
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#CCFFFF" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/title>&lt;/head></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&nbsp;Customization Page</tt>
+<br><tt>&lt;/body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p>If<tt> user_name == XYZ</tt>
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#CCFFFF" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/title>&lt;/head></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&nbsp;Welcome XYZ</tt>
+<br><tt>&lt;/body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p><b><font size=+1>For Construct</font></b>
+<p><tt>${FOR}[whitespace]*{initblock}[whitespace]*{block}</tt>
+<p><tt>initblock&nbsp; - String IN var</tt>
+<p>Suppose the HTML template writer needs to write a template which would
+be used by a servlet to display the number of distinct shirt sizes available
+and display the size names in the form of a list. The template would be
+of the following form:
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#FFFFCC" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/title>&lt;/head></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;form method=POST action=/servlet/xyz></tt>
+<br><tt>Total number of sizes = ${fittings_size.size}</tt>
+<p><tt>&lt;select></tt>
+<br><tt>${FOR}{ABC IN ${fittings_size}}{</tt>
+<br><tt>&lt;option value=${ABC}>${ABC}&lt;/option>}</tt>
+<br><tt>&lt;/select></tt>
+<p><tt>&lt;/form></tt>
+<br><tt>&lt;/body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p>If the distinct shirt-sizes are<tt> “M”, “L”, “XL”, “XXL” </tt>the servlet
+writer would write code similar to the following form:
+<p><tt>&nbsp;Hashtable hash = new Hashtable();</tt>
+<br><tt>&nbsp;Vector vect = new Vector();</tt>
+<br><tt>&nbsp;vect.add("M");</tt>
+<br><tt>&nbsp;vect.add("L");</tt>
+<br><tt>&nbsp;vect.add("XL");</tt>
+<br><tt>&nbsp;vect.add("XXL");</tt>
+<br><tt>&nbsp;hash.put("fittings_size", vect);</tt>
+<p>and the html output would be as follows:
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#CCFFFF" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;head>&lt;title>&lt;/title>&lt;/head></tt>
+<br><tt>&lt;body></tt>
+<br><tt>&lt;form method=POST action=/servlet/xyz></tt>
+<br><tt>Total number of sizes = 4</tt>
+<p><tt>&lt;select></tt>
+<p><tt>&lt;option value=M>M&lt;/option></tt>
+<br><tt>&lt;option value=L>L&lt;/option></tt>
+<br><tt>&lt;option value=XL}>XL&lt;/option></tt>
+<br><tt>&lt;option value=XXL>XXL&lt;/option></tt>
+<br><tt>&lt;/select></tt>
+<p><tt>&lt;/form></tt>
+<br><tt>&lt;/body></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p><b><font size=+1>Iterator Construct</font></b>
+<p>Very often there is a requirement to show up indexed value from multiple
+vectors in a tabular representation.
+<br>For example, consider the following :
+<p><tt>Item_list = { &quot;shirt&quot;, &quot;flowers&quot;, &quot;cups&quot;,
+&quot;pencil&quot;}</tt>
+<br><tt>Quantity = { 1, 2, 12, 3}</tt>
+<br><tt>Units = {Number, Bouquet, Dozen, Box}</tt>
+<p>And the table should be something like
+<br>&nbsp;
+<table BORDER="1" COLS=3 WIDTH="500" bgcolor="#C9C9E4" >
+<tr>
+<td>shirt</td>
+
+<td>1</td>
+
+<td>Number</td>
+</tr>
+
+<tr>
+<td>flowers</td>
+
+<td>2</td>
+
+<td>Bouquet</td>
+</tr>
+
+<tr>
+<td>cups</td>
+
+<td>12</td>
+
+<td>Dozen</td>
+</tr>
+
+<tr>
+<td>pencil</td>
+
+<td>3</td>
+
+<td>Box</td>
+</tr>
+</table>
+
+<p>In order to achieve this, we would require an iterator type construct,
+which allows us to iterate items from a vector.
+<p>The grammar is as follows:
+<p><tt>&nbsp;${ITR}[whitespace]*{initblock}[whitespace]*{block}</tt>
+<p><tt>&nbsp;initblock&nbsp; - String[whitespace]+ var|string TO var|string</tt>
+<br>&nbsp;
+<p>In the<tt> initblock, </tt>the first<tt> var|string </tt>is the start
+index and the second<tt> var|string </tt>is the iteration count.
+<p>Example 1:
+<p>The template for the example detailed above would be as follows:
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#FFFFCC" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;table></tt>
+<br><tt>${ITR}{INDEX 0 TO ${Item_list.size}}{</tt>
+<br><tt>&lt;tr></tt>
+<br><tt>&lt;td>${Item_list[${INDEX}]}&lt;/td></tt>
+<br><tt>&lt;td>${Quantity[${INDEX}]}&lt;/td></tt>
+<br><tt>&lt;td>${Unit[${INDEX}]}&lt;/td></tt>
+<br><tt>&lt;/tr>}</tt>
+<br><tt>&lt;/table></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p>The resultant output is:
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#CCFFFF" >
+<tr>
+<td><tt>&lt;html></tt>
+<br><tt>&lt;table></tt>
+<br><tt>&lt;tr></tt>
+<br><tt>&lt;td>shirts&lt;/td></tt>
+<br><tt>&lt;td>1&lt;/td></tt>
+<br><tt>&lt;td>Number&lt;/td></tt>
+<br><tt>&lt;/tr></tt>
+<br><tt>&lt;tr></tt>
+<br><tt>&lt;td>flowers&lt;/td></tt>
+<br><tt>&lt;td>2&lt;/td></tt>
+<br><tt>&lt;td>Bouquet&lt;/td></tt>
+<br><tt>&lt;/tr></tt>
+<br><tt>&lt;tr></tt>
+<br><tt>&lt;td>cups&lt;/td></tt>
+<br><tt>&lt;td>12&lt;/td></tt>
+<br><tt>&lt;td>Dozen&lt;/td></tt>
+<br><tt>&lt;/tr></tt>
+<br><tt>&lt;tr></tt>
+<br><tt>&lt;td>pencils&lt;/td></tt>
+<br><tt>&lt;td>3&lt;/td></tt>
+<br><tt>&lt;td>Box&lt;/td></tt>
+<br><tt>&lt;/tr></tt>
+<br><tt>&lt;/table></tt>
+<br><tt>&lt;/html></tt></td>
+</tr>
+</table>
+
+<p>Example 2:
+<p>Let us consider an even more complicated scenario:
+<p>Suppose we are required to display the attribute and corresponding list
+of values of an item.
+<br>So the variable issues in this example are:
+<ul>
+<li>
+&nbsp;The number of attributes of a specific item</li>
+
+<li>
+&nbsp;The list of permissible values of a specific attribute of an item</li>
+</ul>
+The corresponding template in that case would be as follows:
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#FFFFCC" >
+<tr>
+<td><tt>&lt;form></tt>
+<br><tt>${ITR}{IND1 0 TO ${prop_list.size}}{</tt>
+<br><tt>&lt;b>${prop_list[${IND1}]}&lt;/b></tt>
+<br><tt>&lt;select></tt>
+<br><tt>${FOR}{IND2 IN ${value[${IND2}] }}{</tt>
+<br><tt>&lt;option value=${IND2}>${IND2}&lt;/option></tt>
+<br><tt>&lt;/select></tt>
+<br><tt>&lt;br>}</tt>
+<br><tt>}</tt>
+<br><tt>&lt;/form></tt></td>
+</tr>
+</table>
+
+<p>Suppose the servlet retrieves the following for a specific item :
+<p><tt>&nbsp;prop_list={&quot;Size&quot;, &quot;Color&quot;}</tt>
+<br><tt>&nbsp;value={{&quot;XL&quot;, &quot;L&quot;, &quot;M&quot;},</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&quot;Red&quot;,
+&quot;Blue&quot;, &quot;Green&quot;}}</tt>
+<p>Then the generated html code would be :
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="600" BGCOLOR="#CCFFFF" >
+<tr>
+<td><tt>&lt;form></tt>
+<br><tt>&lt;b>Size&lt;/b></tt>
+<br><tt>&lt;select></tt>
+<br><tt>&lt;option value=XL>XL&lt;/option></tt>
+<br><tt>&lt;option value=L>L&lt;/option></tt>
+<br><tt>&lt;option value=M>M&lt;/option></tt>
+<br><tt>&lt;/select></tt>
+<br><tt>&lt;br></tt>
+<p><tt>&lt;b>Color&lt;/b></tt>
+<br><tt>&lt;select></tt>
+<br><tt>&lt;option value=Red>Red&lt;/option></tt>
+<br><tt>&lt;option value=Blue>Blue&lt;/option></tt>
+<br><tt>&lt;option value=Green>Green&lt;/option></tt>
+<br><tt>&lt;/select></tt>
+<br><tt>&lt;br></tt>
+<br><tt>&lt;/form></tt></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<p><b><font size=+1>Dynamic Variable Generation</font></b>
+<p>Variables can be formed dynamically.
+<p>For example
+<br><tt>&nbsp;var1 = var2</tt>
+<br><tt>&nbsp;var2 = "Hello World"</tt>
+<p>So in template <tt>${${var1}}</tt> will be evaluated as <tt>Hello World</tt>.
+<hr WIDTH="100%">
+<p>
+Please send comments to <a href="mailto:rana_b@yahoo.com">rana_b@yahoo.com</a>
+<br>&nbsp;</p>
+</body>
+</html>

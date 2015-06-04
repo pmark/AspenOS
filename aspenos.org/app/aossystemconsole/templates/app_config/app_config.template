@@ -1,0 +1,17 @@
+
+<p><font face="Arial, Helvetica, sans-serif" size="3">Configuration for 
+<i><font color="#3399FF"><b>[tag:app_display_name]</b></font></i></font>
+
+
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif" size="3" color="#3399FF"> <a href="[tag:form_action]?webevent_name=aec_choose_event&[tag:param_string]">Edit 
+    Events</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="3" color="#3399FF"> <a href="[tag:form_action]?webevent_name=choose_template&[tag:param_string]">Edit 
+    Templates</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="3" color="#3399FF"> <a href="[tag:form_action]?webevent_name=xml_import&[tag:param_string]">XML 
+    Import </a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="3" color="#3399FF"> <a href="[tag:form_action]?webevent_name=recache_templates&[tag:param_string]">Recache 
+    All Templates</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="3" color="#3399FF"> <a href="[tag:form_action]?webevent_name=download_app_jar&[tag:param_string]">Download 
+    App Jar</a></font></li>
+</ul>

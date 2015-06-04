@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Guest Book</title>
+</head>
+
+<body bgcolor="#CECE9D">
+
+<h1 align="center"><font size="6" face="Arial" color="#663300">Guest Comments</font></h1>
+
+${IF}{${message} != ${NULL}}{  
+<div align="center">
+  <center>
+  <table border="0" width="100%" bgcolor="#CCFFCC" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="100%">
+        <p align="center"><font size="4"><b>${message}</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+}
+
+<p><font face="Arial" size="3">Total Comments : <b>${name.size}</b></font></p>
+${ITR}{INDEX 0 THRU ${name.size}} {
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" bgcolor="#CECE9D"><b><font face="Arial" size="3"><i>${name[${INDEX}]}</i></font></b></td>
+  </tr>
+  <tr>
+    <td width="50%" bgcolor="#D1E9A0"><font face="Arial" size="3"><b>Email :</b> <a href="mailto:${email[${INDEX}]}">${email[${INDEX}]}</a></font></td>
+    <td width="50%" bgcolor="#D1E9A0"><font face="Arial" size="3"><b>Submit Time : </b>${time[${INDEX}]}</font> </td>
+  </tr>
+  <tr>
+    <td width="50%" bgcolor="#E1F0C1" colspan="2">&nbsp;<font face="Arial" size="3">${comment[${INDEX}]}</font></td>
+  </tr>
+</table>
+<br>
+}
+
+<p><font face="Arial" size="3">Go back to <a href="/~ranab/index.html">home page</a>.</font></p>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<PrincipalDefs>
+
+<PrincipalDef username='joe' password='12345' selected_role='10'>
+<RoleDef id='10'/>
+<RoleDef id='11'/>
+<RoleDef id='12'/>
+</PrincipalDef>
+
+<PrincipalDef id='6' username='sam' password='12345' selected_role='20'>
+<RoleDef id='20'/>
+<RoleDef id='21'/>
+<RoleDef id='22'/>
+</PrincipalDef>
+
+</PrincipalDefs>
+

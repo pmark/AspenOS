@@ -1,0 +1,7 @@
+ (
+texttmpl_id	serial PRIMARY KEY,
+role_id	 int4,
+placement_code text,
+text_data text,
+description text
+)

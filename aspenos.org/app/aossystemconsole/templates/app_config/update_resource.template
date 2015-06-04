@@ -1,0 +1,26 @@
+<form method="post" action="[tag:form_action]" name="[tag:form_name]"> 
+
+  <p><font face="Arial, Helvetica, sans-serif" size="3">A
+  resource has been added to 
+    <i>[tag:sel_event_name]</i>.</font></p>
+  <p><font face="Arial, Helvetica, sans-serif" size="2" color="#3399FF">To 
+	
+    <input type="submit" name="btn_add_template" value="view resource templates"
+		onClick="setNextEventName('aec_add_resource_template')">,
+    click this button.<br><br>
+	To <input type="submit" name="btn_go_back" value="go back"
+		onClick="setNextEventName('aec_choose_event')"> 
+    to the event list, click this button.<br><br>
+	</font></p>
+
+<input type="hidden" name="sel_resource_name" value="[tag:sel_resource_name]">
+<input type="hidden" name="sel_event_name" value="[tag:sel_event_name]">
+
+<input type="hidden" name="webevent_name" value="">
+
+<input type="hidden" name="app_id" value="[tag:app_id]">
+<input type="hidden" name="app_display_name" value="[tag:app_display_name]">
+<input type="hidden" name="reggrp_key" value="[tag:reggrp_key]">
+<input type="hidden" name="reggrp_name" value="[tag:reggrp_name]">
+
+</form>

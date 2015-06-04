@@ -1,0 +1,68 @@
+
+<form method="post" action="[tag:form_action]" name="[tag:form_name]"> 
+<div align="center"> 
+  <table width="309" border="0" cellspacing="2" cellpadding="2">
+    <tr> 
+      <td colspan="3"> 
+        <div align="center"></div>
+      </td>
+      <td></td>
+    </tr>
+    <tr> 
+      <td width="43">&nbsp;</td>
+      <td rowspan="5" width="43"> 
+        <select class="list_style" name="lst_main" size="7" [tag:more_select_attribs]>
+            [tag:list_items]
+             
+          <option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+        </select>
+      </td>
+      <td width="161">&nbsp;</td>
+      <td width="36" rowspan="6"> 
+        <div align="center">[tag:extra_stuff]</div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="43"> 
+        <div align="center"> 
+          <input type="submit" name="btn_add" value="add" 
+			onClick="setNextEventId('[tag:next_id_add]'); setNextEventName('[tag:next_name_add]') ">
+        </div>
+      </td>
+      <td width="161"> 
+        <div align="center"> 
+          <input type="submit" name="btn_[tag:primary_cmd_name]" value="[tag:primary_cmd_label]" 
+			onClick="setNextEventId('[tag:next_id_primary]'); setNextEventName('[tag:next_name_primary]') ">
+        </div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="43"> 
+        <div align="center"></div>
+      </td>
+      <td width="161"> 
+        <div align="center"> 
+          <input type="submit" name="btn_remove" value="remove" 
+			onClick="setNextEventId('[tag:next_id_remove]'); setNextEventName('[tag:next_name_remove]') ">
+        </div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="43"> 
+        <div align="center"></div>
+      </td>
+      <td width="161"> 
+        <div align="center"> </div>
+      </td>
+    </tr>
+    <tr> 
+      <td width="43">&nbsp;</td>
+      <td width="161">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="247" colspan="3"><font face="Arial, Helvetica, sans-serif" size="2">[tag:list_label]</font></td>
+    </tr>
+  </table>
+</div>
+<input type="hidden" name="webevent_name" value="">
+<input type="hidden" name="webevent_id" value="">

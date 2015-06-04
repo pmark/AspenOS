@@ -1,0 +1,124 @@
+
+<p><font face="Arial, Helvetica, sans-serif" size="3">Uninstall <i><font color="#3399FF"><b>[tag:app_display_name]</b></font></i></font> 
+  <br>
+<form method="post" action="[tag:form_action]" name="[tag:form_name]">
+
+<input type="hidden" name="webevent_name" value="do_uninstall">
+<input type="hidden" name="app_display_name" value="[tag:app_display_name]">
+<input type="hidden" name="app_id" value="[tag:app_id]">
+<input type="hidden" name="reggrp_key" value="[tag:reggrp_key]">
+<input type="hidden" name="reggrp_name" value="[tag:reggrp_name]">
+
+  <table width="500" border="0" cellspacing="0" cellpadding="2">
+    <tr align="center"> 
+      <td>
+        <table bgcolor=#BBBBBB border=0 cellpadding=1 cellspacing=0 width="200">
+          <tbody> 
+          <tr> 
+            <td> 
+              <div align="center"> 
+                <table cellspacing="0" cellpadding="0" width="252" border="0" bgcolor="#EBEBEB">
+                  <tr> 
+                    <td width="12">&nbsp;</td>
+                    <td width="12">&nbsp;</td>
+                    <td height="5">&nbsp;</td>
+                    <td width="12">&nbsp;</td>
+                    <td width="12">&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td width="12"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+                    <td width="12"><img src="/aspenos/images/corner_tl.gif" width="12" height="12"></td>
+                    <td bgcolor="#000000" height="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font></td>
+                    <td width="12"><img src="/aspenos/images/corner_tr.gif" width="12" height="12"></td>
+                    <td width="12"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+                  </tr>
+                  <tr> 
+                    <td>&nbsp;</td>
+                    <td bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+                    <td> 
+                      <table width="350" border="0" cellspacing="0" cellpadding="4">
+                        <tr bgcolor="#999999"> 
+                          <td colspan="3" bgcolor="#003333"><font face="Arial, Helvetica, sans-serif" size="2"><b><font color="#FFFFFF">OPTIONS 
+                            </font> </b></font></td>
+                        </tr>
+                        <tr> 
+                          <td width="33" bgcolor="#333333">&nbsp;</td>
+                          <td width="301" bgcolor="#999999"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"> 
+                            <input type="checkbox" name="checkbox3" value="checkbox">
+                            full uninstall - removes everything</font></td>
+                          <td width="17" bgcolor="#003333">&nbsp;</td>
+                        </tr>
+                        <tr bgcolor="#CCCCCC"> 
+                          <td width="33" bgcolor="#333333"><b><img src="/aspenos/images/dot_clear.gif" width="32" height="3"></b></td>
+                          <td width="301" bgcolor="#003333"><font color="#000000"><b><img src="/aspenos/images/dot_clear.gif" width="32" height="3"></b></font></td>
+                          <td width="17" bgcolor="#003333"><b><img src="/aspenos/images/dot_clear.gif" width="16" height="3"></b></td>
+                        </tr>
+                        <tr> 
+                          <td width="33" bgcolor="#333333">&nbsp;</td>
+                          <td width="301" bgcolor="#999999"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"> 
+                            <input type="checkbox" name="checkbox24" value="checkbox">
+                            content server data</font></td>
+                          <td width="17" bgcolor="#003333">&nbsp;</td>
+                        </tr>
+                        <tr> 
+                          <td width="33" bgcolor="#333333">&nbsp;</td>
+                          <td width="301" bgcolor="#999999"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"> 
+                            <input type="checkbox" name="checkbox222" value="checkbox">
+                            application files</font></td>
+                          <td width="17" bgcolor="#003333">&nbsp;</td>
+                        </tr>
+                        <tr> 
+                          <td width="33" bgcolor="#333333">&nbsp;</td>
+                          <td width="301" bgcolor="#999999"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"> 
+                            <input type="checkbox" name="checkbox232" value="checkbox">
+                            application database(s)</font></td>
+                          <td width="17" bgcolor="#003333">&nbsp;</td>
+                        </tr>
+                        <tr bgcolor="#CCCCCC"> 
+                          <td colspan="2" bgcolor="#333333"><b><img src="/aspenos/images/dot_clear.gif" width="32" height="3"></b></td>
+                          <td bgcolor="#003333"><b><img src="/aspenos/images/dot_clear.gif" width="16" height="3"></b></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+                    <td><img src="/aspenos/images/corner_bl.gif" width="12" height="12"></td>
+                    <td bgcolor="#000000" height="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font></td>
+                    <td><img src="/aspenos/images/corner_br.gif" width="12" height="12"></td>
+                    <td><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+                  </tr>
+                  <tr> 
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td height="5">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          </tbody> 
+        </table>
+      </td>
+    </tr>
+    <tr align="center"> 
+      <td>&nbsp;</td>
+    </tr>
+    <tr align="center"> 
+      <td>
+        <input type="submit" name="btn_uninstall" value="uninstall application">
+      </td>
+    </tr>
+  </table>
+  </form>
+<p>&nbsp;
+<br>
+<p><font face="Arial, Helvetica, sans-serif" size="2"><br>
+  <br>
+  <br>
+  <br>
+  </font>

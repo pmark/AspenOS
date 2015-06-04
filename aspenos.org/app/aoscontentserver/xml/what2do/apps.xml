@@ -1,0 +1,10 @@
+<AppDefs>
+
+<AppDef display_name='AOS Content Server' 
+	system_name='aoscontentserver' vendor_id='1'/>
+
+<AppDef display_name='AOS Console' 
+	system_name='aosconsole' vendor_id='1'/>
+
+</AppDefs>
+

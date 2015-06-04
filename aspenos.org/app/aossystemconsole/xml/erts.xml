@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<ERTDefs>
+
+<ERTDef registry_group='aos_system'>
+
+<WebEventDef name='home'>
+ <ResourceDef name='home'>
+  <TemplateDef name='home'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='installed_apps'>
+ <ResourceDef name='installed_apps'>
+  <TemplateDef name='installed_app_body'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+
+<!-- App Installation -->
+<WebEventDef name='install1'>
+ <ResourceDef name='install1'>
+  <TemplateDef name='install1'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='install2'>
+ <ResourceDef name='install2'>
+  <TemplateDef name='install2'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='install3'>
+ <ResourceDef name='install3'>
+  <TemplateDef name='install3'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+
+
+<!-- App Configuration -->
+<WebEventDef name='add_template'>
+ <ResourceDef name='add_template'>
+  <TemplateDef name='edit_wrapper'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='app_config'>
+ <ResourceDef name='app_config'>
+  <TemplateDef name='app_config'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='choose_template'>
+ <ResourceDef name='choose_template'>
+  <TemplateDef name='choose_template'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='edit_template'>
+ <ResourceDef name='edit_template'>
+  <TemplateDef name='edit_wrapper'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='editor_update'>
+ <ResourceDef name='editor_update'>
+  <TemplateDef name='editor_update'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='recache_templates'>
+ <ResourceDef name='recache_templates'>
+  <TemplateDef name='recache_templates'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='remove_template'>
+ <ResourceDef name='remove_template'>
+  <TemplateDef name='redir_page'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='template_editor'>
+ <ResourceDef name='template_editor'>
+  <TemplateDef name='template_editor'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='update_template'>
+ <ResourceDef name='update_template'>
+  <TemplateDef name='redir_page'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='uninstall'>
+ <ResourceDef name='uninstall'>
+  <TemplateDef name='uninstall'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='do_uninstall'>
+ <ResourceDef name='do_uninstall'>
+  <TemplateDef name='uninstall_result'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+
+<!-- Event Configuration -->
+<WebEventDef name='aec_add_event'>
+ <ResourceDef name='aec_add_event'>
+  <TemplateDef name='edit_wrapper'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_add_resource'>
+ <ResourceDef name='aec_add_resource'>
+  <TemplateDef name='edit_wrapper'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_add_resource_template'>
+ <ResourceDef name='aec_add_resource_template'>
+  <TemplateDef name='aec_add_res_template'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_assign_template_roles'>
+ <ResourceDef name='aec_assign_template_roles'>
+  <TemplateDef name='redir_page'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+
+<WebEventDef name='aec_choose_event'>
+ <ResourceDef name='aec_choose_event'>
+  <TemplateDef name='aec_choose_event'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_choose_resource'>
+ <ResourceDef name='aec_choose_resource'>
+  <TemplateDef name='aec_choose_resource'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_edit_event'>
+ <ResourceDef name='aec_edit_event'>
+  <TemplateDef name='edit_wrapper'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_edit_resource'>
+ <ResourceDef name='aec_edit_resource'>
+  <TemplateDef name='edit_wrapper'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_remove_event'>
+ <ResourceDef name='aec_remove_event'>
+  <TemplateDef name='redir_page'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_remove_resource'>
+ <ResourceDef name='aec_remove_resource'>
+  <TemplateDef name='redir_page'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_update_event'>
+ <ResourceDef name='aec_update_event'>
+  <TemplateDef name='aec_update_event'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+<WebEventDef name='aec_update_resource'>
+ <ResourceDef name='aec_update_resource'>
+  <TemplateDef name='aec_update_resource'>
+   <RoleDef name='admin'/>
+  </TemplateDef>
+ </ResourceDef>
+</WebEventDef>
+
+
+
+</ERTDef>
+
+</ERTDefs>
+

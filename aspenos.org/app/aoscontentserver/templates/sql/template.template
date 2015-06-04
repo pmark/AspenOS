@@ -1,0 +1,5 @@
+ (
+template_id serial PRIMARY KEY,
+name text,
+file_path text
+)

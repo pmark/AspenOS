@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<MenuDefs>
+
+<MenuDef name='admin_menu' parent_name='admin_menu' type='h'/>
+
+</MenuDefs>
+

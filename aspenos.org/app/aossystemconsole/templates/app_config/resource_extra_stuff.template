@@ -1,0 +1,19 @@
+ 
+<p><br>
+  <font face="Courier New, Courier, mono" size="2"></font></p>
+<table border="0">
+  <tr>
+    <td> 
+      <div align="center">
+        <input type="submit" name="btn_view_templates" value="view templates" 
+	  	onClick="setNextEventName('aec_add_resource_template')">
+      </div>
+    </td>
+  </tr>
+  <tr bgcolor="#CCCCCC"> 
+    <td><font face="Courier New, Courier, mono" size="2"><B>*</B> Events can have 
+      many resources, and resources can have many template-role pairs.<br>
+      </font></td>
+  </tr>
+</table>
+<p>&nbsp;</p>

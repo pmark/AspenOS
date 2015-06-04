@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<VendorDefs>
+<VendorDef id='1' display_name='AspenOS' system_name='aspenos'/>
+</VendorDefs>

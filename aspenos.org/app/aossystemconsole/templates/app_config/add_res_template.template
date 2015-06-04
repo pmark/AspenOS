@@ -1,0 +1,42 @@
+<script language="Javascript">
+
+var roleIds = [[tag:role_ids]];
+
+function getTemplateData() {
+	var selIndex = document.[tag:form_name].lst_main.selectedIndex;
+	var templateName = document.[tag:form_name].lst_main[selIndex].text;
+	var roleId = roleIds[selIndex];
+
+	document.[tag:form_name].txt_role_id.value = roleId;
+}
+
+</script>
+
+  <p><font face="Arial, Helvetica, sans-serif" size="3">All assigned templates for <i><font color="#3399FF"><b>[tag:app_display_name]</b></font></i><font color="#3399FF"> 
+    </font></font></p>
+  <p><font color="#3399FF" face="Arial, Helvetica, sans-serif" size="2">Choose 
+    a template from the list, then click the <i>edit</i> or <i>remove</i> button.<br>
+    To add a new template, click the <i>add</i> button.<br><br>
+	<font face="courier,sans-serif" color="#000000"><b>WEB EVENT:</b> [tag:sel_event_name]<br>
+	<b>RESOURCE:</b> [tag:sel_resource_name]</font><br><br>
+
+	To add or change the roles for a template, use the <i>role IDs</i> field.<br>
+	Click the <i>assign role(s) to template</i> button after entering a role
+	ID.
+	</font></p>
+
+	[tag:art_msg]
+
+  <p><font face="Arial, Helvetica, sans-serif" size="2">[tag:main_list]</font></p>
+
+<input type="hidden" name="app_id" value="[tag:app_id]">
+<input type="hidden" name="app_display_name" value="[tag:app_display_name]">
+<input type="hidden" name="reggrp_key" value="[tag:reggrp_key]">
+<input type="hidden" name="reggrp_name" value="[tag:reggrp_name]">
+
+<input type="hidden" name="sel_event_name" value="[tag:sel_event_name]">
+<input type="hidden" name="sel_resource_name" value="[tag:sel_resource_name]">
+
+<input type="hidden" name="redir_event" value="[tag:redir_event]">
+
+</form>

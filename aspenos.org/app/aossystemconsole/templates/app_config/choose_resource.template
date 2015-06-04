@@ -1,0 +1,12 @@
+
+ [tag:choose_resource_content]
+
+<input type="hidden" name="app_id" value="[tag:app_id]">
+<input type="hidden" name="app_display_name" value="[tag:app_display_name]">
+<input type="hidden" name="reggrp_key" value="[tag:reggrp_key]">
+<input type="hidden" name="reggrp_name" value="[tag:reggrp_name]">
+
+<input type="hidden" name="sel_resource_name" value="[tag:sel_resource_name]">
+<input type="hidden" name="sel_event_name" value="[tag:sel_event_name]">
+
+</form>

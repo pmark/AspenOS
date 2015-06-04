@@ -1,0 +1,220 @@
+
+<body bgcolor="#FFFFFF">
+<p><font face="Arial, Helvetica, sans-serif" size="4">Please choose an install 
+  type.<br>
+  </font><font face="Arial, Helvetica, sans-serif" size="2">Refer to the <a href="/aspenos/install_help.html">help</a> 
+  page to find out what the contents of an application's JAR file are.</font></p>
+<form method="post" action="[tag:form_action]" name="install_form" enctype="multipart/form-data">
+  <table bgcolor=#bbbbbb border=0 cellpadding=1 cellspacing=0 width="200">
+    <tbody> 
+    <tr> 
+      <td> 
+        <div align="center"> 
+          <table cellspacing="0" cellpadding="0" width="252" border="0" bgcolor="#EBEBEB">
+            <tr> 
+              <td width="12">&nbsp;</td>
+              <td width="12">&nbsp;</td>
+              <td height="5">&nbsp;</td>
+              <td width="12">&nbsp;</td>
+              <td width="12">&nbsp;</td>
+            </tr>
+            <tr> 
+              <td width="12"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+              <td width="12"><img src="/aspenos/images/corner_tl.gif" width="12" height="12"></td>
+              <td bgcolor="#000000" height="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font></td>
+              <td width="12"><img src="/aspenos/images/corner_tr.gif" width="12" height="12"></td>
+              <td width="12"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+            </tr>
+            <tr> 
+              <td>&nbsp;</td>
+              <td bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+              <td> 
+                <table width="600" border="0" cellpadding="0" cellspacing="0">
+                  <tr bgcolor="#333333"> 
+                    <td colspan="2"> 
+                      <div align="right">&nbsp;<font face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF"><b>Network 
+                        Install</b></font><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#999999"> 
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                    <td bgcolor="#999999"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFCC"><img src="/aspenos/images/dot_clear.gif" width="32" height="5"><br>
+                      <b>To fetch the JAR file from a remote server</b>, enter 
+                      the full URL to the JAR file and the username and password 
+                      if necessary.<br>
+                      <img src="/aspenos/images/dot_clear.gif" width="32" height="5"></font></td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#CCCCCC" colspan="2"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFCC"><img src="/aspenos/images/dot_clear.gif" width="32" height="5"></font></td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="95"> 
+                      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2"> 
+                        URL: </font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC"> <font face="Arial, Helvetica, sans-serif" size="2"> 
+                      &nbsp; 
+                      <input type="text" name="jar_url" size="50">
+                      </font></td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="95"> 
+                      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Username: 
+                        </font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC"> <font face="Arial, Helvetica, sans-serif" size="2"> 
+                      &nbsp; 
+                      <input type="text" name="web_username">
+                      </font></td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="95"> 
+                      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2">Password: 
+                        </font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC"> <font face="Arial, Helvetica, sans-serif" size="2"> 
+                      &nbsp; 
+                      <input type="password" name="web_password">
+                      </font></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2" bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFCC"><img src="/aspenos/images/dot_clear.gif" width="32" height="5"></font></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2" bgcolor="#CCCCCC"> 
+                      <div align="center"> 
+                        <input type="submit" name="btn_fetch" value="Fetch Jar">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2" bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFCC"><img src="/aspenos/images/dot_clear.gif" width="32" height="5"></font></td>
+                  </tr>
+                </table>
+              </td>
+              <td bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr> 
+              <td><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+              <td><img src="/aspenos/images/corner_bl.gif" width="12" height="12"></td>
+              <td bgcolor="#000000" height="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font></td>
+              <td><img src="/aspenos/images/corner_br.gif" width="12" height="12"></td>
+              <td><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+            </tr>
+            <tr> 
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td height="5">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+    </tbody> 
+  </table>
+  <p><font face="Arial, Helvetica, sans-serif" size="5">OR</font></p>
+  <table bgcolor=#bbbbbb border=0 cellpadding=1 cellspacing=0 width="200">
+    <tbody> 
+    <tr> 
+      <td> 
+        <div align="center"> 
+          <table cellspacing="0" cellpadding="0" width="252" border="0" bgcolor="#EBEBEB">
+            <tr> 
+              <td width="12">&nbsp;</td>
+              <td width="12">&nbsp;</td>
+              <td height="5">&nbsp;</td>
+              <td width="12">&nbsp;</td>
+              <td width="12">&nbsp;</td>
+            </tr>
+            <tr> 
+              <td width="12"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+              <td width="12"><img src="/aspenos/images/corner_tl.gif" width="12" height="12"></td>
+              <td bgcolor="#000000" height="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font></td>
+              <td width="12"><img src="/aspenos/images/corner_tr.gif" width="12" height="12"></td>
+              <td width="12"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+            </tr>
+            <tr> 
+              <td>&nbsp;</td>
+              <td bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+              <td> 
+                <table width="600" border="0" cellspacing="0" cellpadding="0">
+                  <tr bgcolor="#333333"> 
+                    <td colspan="2"> 
+                      <div align="right">&nbsp;<font face="Arial, Helvetica, sans-serif" size="3" color="#FFFFFF"><b>Local 
+                        Install</b></font><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#999999"> 
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                    <td bgcolor="#999999"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFCC"><img src="/aspenos/images/dot_clear.gif" width="32" height="5"><br>
+                      <b>To upload the JAR file from your current location</b>, 
+                      click the <i>browse</i> button and select the new application's 
+                      JAR file.<br>
+                      <img src="/aspenos/images/dot_clear.gif" width="32" height="5"></font></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2" bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFCC"><img src="/aspenos/images/dot_clear.gif" width="32" height="5"></font></td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#CCCCCC"> 
+                      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2"> 
+                        <font size="3"> <font face="Arial, Helvetica, sans-serif" size="2">Path 
+                        to JAR:</font><font size="2"> </font></font></font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="2"><font size="3"><font size="2"> 
+                      &nbsp; 
+                      <input type="file" name="file_appjar" enctype="multipart/form-data" size="40">
+                      </font></font></font></td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2" bgcolor="#CCCCCC"> 
+                      <div align="left"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFCC"><img src="/aspenos/images/dot_clear.gif" width="32" height="5"></font></div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2" bgcolor="#CCCCCC"> 
+                      <div align="center"> 
+                        <input type="submit" name="btn_upload" value="Upload Jar">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td colspan="2" bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFCC"><img src="/aspenos/images/dot_clear.gif" width="32" height="5"></font></td>
+                  </tr>
+                </table>
+              </td>
+              <td bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr> 
+              <td><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+              <td><img src="/aspenos/images/corner_bl.gif" width="12" height="12"></td>
+              <td bgcolor="#000000" height="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font></td>
+              <td><img src="/aspenos/images/corner_br.gif" width="12" height="12"></td>
+              <td><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+            </tr>
+            <tr> 
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td height="5">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+    </tbody> 
+  </table>
+  <input type="hidden" name="webevent_name" value="install2">
+</form>
+<p>&nbsp; </p>
+
+

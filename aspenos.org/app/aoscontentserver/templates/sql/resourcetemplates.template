@@ -1,0 +1,5 @@
+ (
+template_id int4,
+resource_id int4,
+role_id int4
+)

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<RoleDefs>
+
+<RoleDef name='role1000' group='users' vendor='aspenos'/>
+<RoleDef name='role1001' group='users' vendor='aspenos'/>
+<RoleDef name='role1002' group='users' vendor='aspenos'/>
+
+</RoleDefs>
+

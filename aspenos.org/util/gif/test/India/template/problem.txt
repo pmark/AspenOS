@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Problem</title>
+</head>
+
+<body bgcolor="#CECE9D">
+<h1 align="center"><font size="6" face="Arial" color="#663300">Problem Page</font></h1>
+<br>
+<font size="3" face="Arial">
+<pre>
+${message}
+</pre>
+</font>
+
+<p>Please send mail to <a href="mailto:rana_b@yahoo.com">rana_b@yahoo.com</a> page.</p>
+
+</body>
+
+</html>

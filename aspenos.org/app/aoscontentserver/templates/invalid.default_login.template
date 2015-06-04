@@ -1,0 +1,28 @@
+<html>
+<title>Login Error</title>
+<body bgcolor="#FFFFFF">
+<table width="494" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td> 
+      <table width="213" border="1" bordercolordark="#000000" bordercolorlight="#000000" align="center">
+        <tr align="center"> 
+          <td> 
+            <div align="center"><font face="arial"><strong><font face="arial" color="#666666" size="2"><strong><font face="Verdana, Arial, Helvetica, sans-serif" size="3">L</font></strong></font><font color="#666666" size="2" face="Verdana, Arial, Helvetica, sans-serif">ogin 
+              <font size="3">E</font>rror</font></strong></font></div>
+          </td>
+        </tr>
+      </table>
+      <div align="center"><br>
+      </div>
+      <font color="#996633" face="Verdana, Arial, Helvetica, sans-serif" size="2">The 
+      user name or password that you entered is incorrect. <br>
+      Please <a href="javascript:history.go(-1);">go back</a> and try again.</font></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body></html>
+
+
+
+
+

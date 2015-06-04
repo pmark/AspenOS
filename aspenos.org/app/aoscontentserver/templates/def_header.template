@@ -1,0 +1,86 @@
+<html>
+<head>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body bgcolor="#FFFFFF">
+[tag:header_data]
+
+<title>[tag:title]</title>
+
+
+
+<script language="javascript">
+
+function setNextEventId(nextId) {
+	if (nextId != "") {
+		document.[tag:form_name].webevent_id.value = nextId;
+	}
+}
+
+function setNextEventName(nextName) {
+	if (nextName != "") {
+		document.[tag:form_name].webevent_name.value = nextName;
+	}
+}
+
+</script>
+
+
+<table width="640" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="2" width="100">
+	<img BORDER="0" SRC="[tag:main_logo_image]" 
+		WIDTH="[tag:main_logo_width]" 
+		HEIGHT="[tag:main_logo_height]"></td>
+    <td rowspan="2" width="20">
+	<img src="/aspenos/images/dot_clear.gif" width="20" height="5"></td>
+    <td height="60">
+	<font face="Arial" size="4">[tag:main_title]<br>
+	<font size="3">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	[tag:sub_titles]</font> 
+	</font></td>
+  </tr>
+  <tr> 
+    <td valign="bottom"> 
+      <div align="right">
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td><img src="/aspenos/images/corner_tl.gif" width="6" height="6"></td>
+            <td bgcolor="#000000"><img src="/aspenos/images/dot_clear.gif" width="45" height="6"></td>
+            <td><img src="/aspenos/images/corner_tr.gif" width="6" height="6"></td>
+          </tr>
+          <tr> 
+            <td bgcolor="#000000"><img src="/aspenos/images/dot_clear.gif" width="6" height="6"></td>
+            <td> 
+              <table border="0" cellspacing="0" cellpadding="1" bgcolor="[tag:menu_bg_color]" >
+                <tr valign="middle"> 
+                  <td><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="[tag:form_action]"><img src="/aspenos/images/home_mini.gif"
+	  border="0" alt="Go home" align="absmiddle"></a></b></font></td>
+                  <td><font face="Arial, Helvetica, sans-serif" size="2"><b>[tag:main_menu]</b></font></td>
+                  <td><font face="Arial, Helvetica, sans-serif" size="2"><b><a href="[tag:form_action]?webevent_name=logout"><img src="/aspenos/images/logout.gif" border="0"
+	  alt="Log out" align="absmiddle"></a></b></font></td>
+                </tr>
+              </table>
+            </td>
+            <td bgcolor="#000000"><img src="/aspenos/images/dot_clear.gif" width="6" height="6"></td>
+          </tr>
+          <tr> 
+            <td><img src="/aspenos/images/corner_bl.gif" width="6" height="6"></td>
+            <td bgcolor="#000000"><img src="/aspenos/images/dot_clear.gif" width="45" height="6"></td>
+            <td><img src="/aspenos/images/corner_br.gif" width="6" height="6"></td>
+          </tr>
+        </table>
+        
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table width="640" border="0">
+  <tr> 
+    <td height="3" bgcolor="[tag:header_sep_color]"><img src="/aspenos/images/dot_clear.gif" width="10" height="2"></td>
+  </tr>
+  <tr> 
+    <td>
+
+

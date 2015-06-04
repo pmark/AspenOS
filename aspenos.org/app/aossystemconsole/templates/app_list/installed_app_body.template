@@ -1,0 +1,92 @@
+
+  <table width="350" border="0">
+    <tr>
+      <td width="8">&nbsp;</td>
+      <td> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#3399FF">Installed 
+          applications are shown to the right.<br>
+          Applications are organized by vendor.</font></p>
+        </td>
+    </tr>
+  </table>
+  <br>
+<table border="0" cellspacing="4" cellpadding="4" width="600">
+  <tr>
+    <td valign="top"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>To install a new 
+        application</b>, click the &quot;Install new app&quot; button below.</font> 
+      </p>
+      <p align="center"> 
+      <form method="post" action="[tag:form_action]" name="install_new_app">
+        <input type="submit" name="btn_install_new_app" value="Install new app">
+        <input type="hidden" name="webevent_name" value="install1">
+      </form>
+      <p></p>
+      <p align="left">&nbsp;</p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b>To 
+        configure or uninstall</b> an application, click on the application's 
+        radio button to its left, then click either the &quot;Configure&quot; 
+        or &quot;Uninstall&quot; button for that application's vendor.</font></p>
+      <p align="left">&nbsp;</p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><b>To 
+        get more </b>applications from all known AspenOS vendors, click the &quot;Get 
+        more apps&quot; button below.</font></p>
+      <p align="center"> 
+      <form method="post" action="[tag:form_action]" name="get_more_apps">
+        <input type="submit" name="btn_get_more_apps" value="Get more apps">
+        <input type="hidden" name="webevent_name" value="get_more_apps">
+      </form>
+      <p><img src="/aspenos/images/dot_clear.gif" width="180" height="8"></p>
+    </td>
+    <td valign="top" align="left"> 
+      <table bgcolor=#BBBBBB border=0 cellpadding=1 cellspacing=0 width="420">
+        <tbody> 
+        <tr> 
+          <td> 
+            <div align="center"> 
+              <table cellspacing="0" cellpadding="0" border="0" bgcolor="#EBEBEB">
+                <tr> 
+                  <td width="1">&nbsp;</td>
+                  <td width="1">&nbsp;</td>
+                  <td height="5">&nbsp;</td>
+                  <td width="1">&nbsp;</td>
+                  <td width="1">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="1"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></td>
+                  <td width="1"><img src="/aspenos/images/corner_tl.gif" width="12" height="12"></td>
+                  <td bgcolor="#000000" height="5"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></td>
+                  <td width="1"><img src="/aspenos/images/corner_tr.gif" width="12" height="12"></td>
+                  <td width="1"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></td>
+                </tr>
+                <tr> 
+                  <td width="1">&nbsp;</td>
+                  <td width="1" bgcolor="#000000"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></td>
+                  <td bgcolor="#000000">[tag:vendor_installed_app_table]</td>
+                  <td width="1" bgcolor="#000000"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></td>
+                  <td width="1">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td width="1"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></td>
+                  <td width="1"><img src="/aspenos/images/corner_bl.gif" width="12" height="12"></td>
+                  <td bgcolor="#000000" height="5"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></td>
+                  <td width="1"><img src="/aspenos/images/corner_br.gif" width="12" height="12"></td>
+                  <td width="1"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></td>
+                </tr>
+                <tr> 
+                  <td width="1">&nbsp;</td>
+                  <td width="1">&nbsp;</td>
+                  <td height="5">&nbsp;</td>
+                  <td width="1">&nbsp;</td>
+                  <td width="1">&nbsp;</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        </tbody> 
+      </table>
+      <img src="/aspenos/images/dot_clear.gif" width="420" height="8"></td>
+  </tr>
+</table>
+<p>&nbsp;</p>

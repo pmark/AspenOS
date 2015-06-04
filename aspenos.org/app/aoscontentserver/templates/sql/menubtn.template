@@ -1,0 +1,6 @@
+ (
+menu_name text,
+icon_name text,
+event_name text,
+ordinal	int2
+)

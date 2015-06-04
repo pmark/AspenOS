@@ -1,0 +1,58 @@
+<script>
+function validateForm() {
+	var tmp;
+	tmp = document.[tag:form_name].txt_name.value;
+	if (tmp == null || tmp == "") {
+		alert("Please enter the RESOURCE NAME.");
+		return false;
+	} 
+	return true;
+}
+</script>
+
+ 
+<p><font color="#3399FF" face="Arial, Helvetica, sans-serif" size="2">Please enter 
+  all of the information about the new resource.<br>
+  Only the resource name is required.</font><font color="#3399FF"><br>
+  </font></p>
+
+<table width="100%" border="0">
+  <tr> 
+    <td width="16">&nbsp;</td>
+    <td width="119"> 
+      <div align="right">
+	  <font face="Arial, Helvetica, sans-serif" size="2">id</font> 
+      </div>
+    </td>
+    <td width="445"> 
+      <input type="text" name="txt_id" size="50" value="[tag:iv_id]">
+    </td>
+  </tr>
+  <tr> 
+    <td width="16">&nbsp;</td>
+    <td width="119"> 
+      <div align="right">
+	  <font face="Arial, Helvetica, sans-serif" size="2">name</font> 
+      </div>
+    </td>
+    <td width="445"> 
+      <input type="text" name="txt_name" size="50" value="[tag:iv_name]">
+      <font size="2" color="#FF3333">*</font></td>
+  </tr>
+  <tr> 
+    <td width="16">&nbsp;</td>
+    <td width="119"> 
+      <div align="right">
+	  <font face="Arial, Helvetica, sans-serif" size="2">ordinal</font> 
+      </div>
+    </td>
+    <td width="445"> 
+      <input type="text" name="txt_ordinal" size="50" value="[tag:iv_ordinal]">
+      </td>
+  </tr>
+</table>
+
+<input type="hidden" name="sel_event_name" value="[tag:sel_event_name]">
+<input type="hidden" name="orig_id" value="[tag:iv_id]">
+
+

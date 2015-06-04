@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<VendorDefs>
+
+<VendorDef system_name='vendor1' display_name='Vendor One'/>
+<VendorDef system_name='vendor2' display_name='Vendor Two'/>
+
+</VendorDefs>
+

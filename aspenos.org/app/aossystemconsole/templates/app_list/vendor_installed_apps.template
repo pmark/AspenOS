@@ -1,0 +1,72 @@
+<script language="javascript">
+
+function setNextEventName_[tag:vendor_sys_name](nextName) {
+	if (nextName != "") {
+		document.acf_[tag:vendor_sys_name].webevent_name.value = nextName;
+	}
+}
+
+</script>
+
+      <form method="post" action="[tag:form_action]" name="acf_[tag:vendor_sys_name]">
+
+            <tr height="25" bgcolor="#000000"> 
+              <td bgcolor="#000000" height="35" align="left" colspan="2">
+			  <font face="Arial, Helvetica, sans-serif" color="#FFFFFF">
+			  <b>&nbsp;&nbsp;
+			  <font color="#FFFFFF">
+			  <b><font face="Arial, Helvetica, sans-serif" size="3">
+			  [tag:vendor_display_name]
+			  </font>
+			  </b></font></b></font>
+			  </td>
+            </tr>
+            <tr height="25"> 
+              <td bgcolor="#003333" height="25"> 
+                <div align="center"><font size="2" color="#CCFFCC">
+				<b><font face="Arial, Helvetica, sans-serif">
+				Select</font></b></font>
+				</div>
+              </td>
+              <td bgcolor="#003333" height="25">
+			  <font size="3" >
+			  <b><font color="#CCFFCC" face="Arial, Helvetica, sans-serif" 
+			     size="2">
+			  &nbsp;Application</font></b></font>
+			  </td>
+            </tr>
+            <tr bgcolor="#FFFFFF"> 
+              <td> 
+                <div align="center">&nbsp; </div>
+              </td>
+              <td><font face="Arial, Helvetica, sans-serif">&nbsp;</font></td>
+            </tr>
+
+[tag:installed_app_list]
+
+            <tr bgcolor="#FFFFFF"> 
+              <td> 
+                <div align="center">&nbsp;</div>
+              </td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr> 
+              <td bgcolor="#003333" colspan="2" height="45"> 
+                <div align="center"> 
+                  <input type="submit" 
+				     name="btn_conf_[tag:vendor_sys_name]" 
+					 value="Configure"
+					 onClick="setNextEventName_[tag:vendor_sys_name]('app_config')">
+
+                  &nbsp;&nbsp;&nbsp; 
+                  <input type="submit" 
+				     name="btn_uninstall_[tag:vendor_sys_name]" 
+					 value="Uninstall"
+					 onClick="setNextEventName_[tag:vendor_sys_name]('uninstall')">
+    </div>
+              </td>
+            </tr>
+	<input type="hidden" name="vendor_sys_name" value="[tag:vendor_sys_name]">
+	<input type="hidden" name="webevent_name" value="">
+</form>
+

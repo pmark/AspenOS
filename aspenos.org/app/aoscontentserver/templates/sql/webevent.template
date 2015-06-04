@@ -1,0 +1,7 @@
+ (
+webevent_id serial PRIMARY KEY,
+name text,
+classname text,
+menu_name text,
+menu_sel_name text
+)

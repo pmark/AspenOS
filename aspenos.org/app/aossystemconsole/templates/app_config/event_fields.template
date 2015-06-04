@@ -1,0 +1,79 @@
+<script>
+
+function validateForm() {
+	var tmp;
+	tmp = document.[tag:form_name].txt_name.value;
+	if (tmp == null || tmp == "") {
+		alert("Please enter the EVENT NAME.");
+		return false;
+	} 
+	tmp = document.[tag:form_name].txt_class_name.value;
+	if (tmp == null || tmp == "") {
+		alert("Please enter the CLASS NAME.");
+		return false;
+	} 
+	return true;
+}
+
+</script>
+
+	<font color="#3399FF" face="Arial, Helvetica, sans-serif" size="2">Please 
+	enter all of the information about the event.<br> 
+	Fields with red stars (<font color="#FF3333">*</font>) are required.<br></font>
+	<br>
+
+<table width="100%" border="0">
+  <tr> 
+    <td width="16">&nbsp;</td>
+    <td width="119"> 
+      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2">id</font> 
+      </div>
+    </td>
+    <td width="445"> 
+      <input type="text" name="txt_id" size="50" value="[tag:iv_id]">
+    </td>
+  </tr>
+  <tr> 
+    <td width="16">&nbsp;</td>
+    <td width="119"> 
+      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2">name</font> 
+      </div>
+    </td>
+    <td width="445"> 
+      <input type="text" name="txt_name" size="50" value="[tag:iv_name]">
+      <font size="2" color="#FF3333">*</font> </td>
+  </tr>
+  <tr> 
+    <td width="16">&nbsp;</td>
+    <td width="119"> 
+      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2">class 
+        name</font> </div>
+    </td>
+    <td width="445"> 
+      <input type="text" name="txt_class_name" size="50" value="[tag:iv_class_name]">
+      <font size="2"><font color="#FF3333">*</font></font> </td>
+  </tr>
+  <tr> 
+    <td width="16">&nbsp;</td>
+    <td width="119"> 
+      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2">menu 
+        name </font> </div>
+    </td>
+    <td width="445"> 
+      <input type="text" name="txt_menu_name" size="50" value="[tag:iv_menu_name]">
+    </td>
+  </tr>
+  <tr> 
+    <td width="16">&nbsp;</td>
+    <td width="119"> 
+      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2">event name
+	  for menu selection</font> </div>
+    </td>
+    <td width="445"> 
+      <input type="text" name="txt_menu_sel_name" size="50" value="[tag:iv_menu_sel_name]">
+    </td>
+  </tr>
+</table>
+
+<input type="hidden" name="orig_id" value="[tag:iv_id]">
+

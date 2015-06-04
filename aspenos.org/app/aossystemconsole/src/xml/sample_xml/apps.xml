@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<AppDefs>
+
+<AppDef system_name='app1' display_name='App One' vendor_id='1'/>
+<AppDef system_name='app1' display_name='App Two' vendor_id='1'/>
+
+</AppDefs>
+

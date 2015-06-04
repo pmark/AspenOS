@@ -1,0 +1,27 @@
+
+<form method="post" action="[tag:form_action]" name="[tag:form_name]">
+  <font face="Arial, Helvetica, sans-serif"> 
+  <p><font size="3">The templates for <b><i>[tag:app_display_name]</i></b> have 
+    been updated.</font></p>
+  <p><font size="2" color="#3399FF">To go to 
+    <input type="submit" name="btn_app_config" value="app configuration"
+		onClick="setNextEventName('app_config')">
+    , click this button.</font><font size="2"><font color="#3399FF"></font></font> 
+  </p>
+  <p><font size="2" color="#3399FF">To go 
+    <input type="submit" name="btn_go_home" value="home"
+		onClick="setNextEventName('')">
+    , click this button.</font><font size="2"><font color="#3399FF"><br>
+    </font></font></p>
+  <p>&nbsp;</p>
+  <input type="hidden" name="webevent_name" value="[tag:redir_event]">
+  <input type="hidden" name="sel_event_name" value="[tag:sel_event_name]">
+  <input type="hidden" name="sel_resource_name" value="[tag:sel_resource_name]">
+  <input type="hidden" name="sel_template_name" value="[tag:sel_template_name]">
+  <input type="hidden" name="app_id" value="[tag:app_id]">
+  <input type="hidden" name="app_display_name" value="[tag:app_display_name]">
+  <input type="hidden" name="reggrp_key" value="[tag:reggrp_key]">
+  <input type="hidden" name="reggrp_name" value="[tag:reggrp_name]">
+  </font> 
+</form>
+

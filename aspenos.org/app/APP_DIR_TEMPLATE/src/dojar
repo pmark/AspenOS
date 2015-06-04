@@ -1,0 +1,5 @@
+
+jar cvf ../archive/hld_www.jar -C ../templates/ . -C /import/development/classes/ com/hldesign/net/www/
+chmod 664 ../archive/hld_www.jar
+
+./pubjar

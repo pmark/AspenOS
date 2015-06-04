@@ -1,0 +1,240 @@
+<script language="javascript">
+
+function updateSaveFormRadio() {
+	var selElement;
+	var len = document.editor_form_file.sel_element.length;
+	var i;
+	for (i=0; i<len; i++) {
+		if (document.editor_form_file.sel_element[i].checked) {
+			selElement = document.editor_form_file.sel_element[i].value;
+			document.editor_form_save.sel_element.value = selElement;
+			return;
+		}
+	}
+}
+
+</script>
+
+
+<form name="editor_form_file" action="[tag:form_action]" 
+	enctype="multipart/form-data" method="post">
+
+<p><font face="Arial, Helvetica, sans-serif"><b><br>
+  XML Import</b></font> <br>
+  <font face="Arial, Helvetica, sans-serif" size="2">Please choose the type of 
+  imported element.<br>
+  <br>
+  <input type="radio" name="sel_element" value="webevent" onClick="updateSaveFormRadio()">
+  WebEvent<br>
+  <input type="radio" name="sel_element" value="resource" onClick="updateSaveFormRadio()">
+  Resource<br>
+  <input type="radio" name="sel_element" value="template" onClick="updateSaveFormRadio()">
+  Template<br>
+  <input type="radio" name="sel_element" value="ert" onClick="updateSaveFormRadio()">
+  Event-Resource-Template (ERT)<br>
+  <input type="radio" name="sel_element" value="menu" onClick="updateSaveFormRadio()">
+  Menu<br>
+  <input type="radio" name="sel_element" value="menubtn" onClick="updateSaveFormRadio()">
+  MenuBtn<br>
+  <input type="radio" name="sel_element" value="icon" onClick="updateSaveFormRadio()">
+  Icon<br></font></p>
+<p>&nbsp;</p>
+
+
+  <input type="hidden" name="webevent_name" value="do_xml_import">
+  <input type="hidden" name="file_path" value="[tag:file_path]">
+  <input type="hidden" name="app_id" value="[tag:app_id]">
+  <input type="hidden" name="app_display_name" value="[tag:app_display_name]">
+  <input type="hidden" name="app_system_name" value="[tag:app_system_name]">
+  <input type="hidden" name="reggrp_key" value="[tag:reggrp_key]">
+  <input type="hidden" name="reggrp_name" value="[tag:reggrp_name]">
+  <input type="hidden" name="redir_event" value="[tag:redir_event]">
+
+<table bgcolor=#bbbbbb border=0 cellpadding=1 cellspacing=0 width="200" align="center">
+  <tbody> 
+  <tr> 
+    <td height="699"> 
+      <div align="center">
+          
+        <table cellspacing="0" cellpadding="0" width="252" bgcolor="#EBEBEB" border="0">
+          <tr> 
+            <td width="48" colspan="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="17"></font></td>
+          </tr>
+          <tr> 
+            <td width="12"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+            <td width="12"><img src="/aspenos/images/corner_tl.gif" width="12" height="12"></td>
+            <td bgcolor="#000000" height="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font></td>
+            <td width="12"><img src="/aspenos/images/corner_tr.gif" width="12" height="12"></td>
+            <td width="12"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+          </tr>
+          <tr> 
+            <td>&nbsp;</td>
+            <td bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+            <td bgcolor="#000000">
+              <table width="600" border="0" cellpadding="0" cellspacing="0" bgcolor="#003333">
+                <tr> 
+                  <td bgcolor="#000000" width="45">&nbsp;</td>
+                  <td bgcolor="#000000" width="20"><font face="Arial, Helvetica, sans-serif" size="2"><img src="/aspenos/images/dot_clear.gif" width="20" height="8"></font></td>
+                  <td bgcolor="#000000" width="524"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"><br>
+                    <b>XML File Upload</b><br>
+                    </font><font face="Arial, Helvetica, sans-serif" size="2"></font><font face="Arial, Helvetica, sans-serif" size="2"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"> 
+                    </font></td>
+                  <td bgcolor="#000000" width="11">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#000000" width="45">&nbsp;</td>
+                  <td width="20">&nbsp;</td>
+                  <td width="524">&nbsp;</td>
+                  <td width="11" bgcolor="#000000">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#000000" width="45">&nbsp;</td>
+                  <td width="544" colspan="2"> 
+                    <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"> 
+                      <input type="file" name="uploaded_file" enctype="multipart/form-data" size="40">
+                      </font></div>
+                  </td>
+                  <td width="11" bgcolor="#000000">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#000000" width="45">&nbsp;</td>
+                  <td width="20">&nbsp;</td>
+                  <td width="524"> 
+                    <div align="center">&nbsp; </div>
+                  </td>
+                  <td width="11" bgcolor="#000000">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#000000" width="45">&nbsp;</td>
+                  <td width="544" colspan="2"> 
+                    <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"> 
+                      <input type="submit" name="btn_upload" value="upload XML file">
+                      </font></div>
+                  </td>
+                  <td width="11" bgcolor="#000000">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#000000" width="45">&nbsp;</td>
+                  <td width="20">&nbsp;</td>
+                  <td width="524">&nbsp;</td>
+                  <td width="11" bgcolor="#000000">&nbsp;</td>
+                </tr>
+                <tr> 
+                  <td bgcolor="#000000" width="45">&nbsp;</td>
+                  <td width="20" bgcolor="#000000">&nbsp;</td>
+                  <td width="524" bgcolor="#000000">&nbsp;</td>
+                  <td width="11" bgcolor="#000000">&nbsp;</td>
+                </tr>
+                <tr bgcolor="#000000"> 
+                  <td width="45">&nbsp;</td>
+                  <td width="20">&nbsp;</td>
+                  <td width="524">&nbsp;</td>
+                  <td width="11">&nbsp;</td>
+                </tr>
+
+  </form>
+
+  <form name="editor_form_save" action="[tag:form_action]" method="post">
+
+  <input type="hidden" name="webevent_name" value="do_xml_import">
+  <input type="hidden" name="sel_element" value="">
+  <input type="hidden" name="file_path" value="[tag:file_path]">
+  <input type="hidden" name="app_id" value="[tag:app_id]">
+  <input type="hidden" name="app_display_name" value="[tag:app_display_name]">
+  <input type="hidden" name="app_system_name" value="[tag:app_system_name]">
+  <input type="hidden" name="reggrp_key" value="[tag:reggrp_key]">
+  <input type="hidden" name="reggrp_name" value="[tag:reggrp_name]">
+  <input type="hidden" name="redir_event" value="[tag:redir_event]">
+
+                  <tr> 
+                    <td bgcolor="#000000" width="45">&nbsp;</td>
+                    <td width="20" bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2"><img src="/aspenos/images/dot_clear.gif" width="20" height="8"></font></td>
+                    <td width="524" bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font><br>
+                      <font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><b>XML 
+                      Editor</b></font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+                      <img src="/aspenos/images/dot_clear.gif" width="45" height="5"> 
+                      </font></td>
+                    <td width="11" bgcolor="#000000">&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#000000" width="45">&nbsp;</td>
+                    <td width="20">&nbsp;</td>
+                    <td width="524">&nbsp;</td>
+                    <td width="11" bgcolor="#000000">&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#000000" width="45"><img src="/aspenos/images/dot_clear.gif" width="45" height="8"></td>
+                    <td width="544" colspan="2"> 
+                      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"> 
+
+
+<!-- ==================================================================== -->
+                        <textarea name="xml" wrap="OFF" rows="17" cols="57">
+						</textarea>
+<!-- ==================================================================== -->
+
+
+                        </font></div>
+                    </td>
+                    <td width="11" bgcolor="#000000"><img src="/aspenos/images/dot_clear.gif" width="45" height="8"></td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#000000" width="45">&nbsp;</td>
+                    <td width="20">&nbsp;</td>
+                    <td width="524">&nbsp;</td>
+                    <td width="11" bgcolor="#000000">&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#000000" width="45">&nbsp;</td>
+                    <td width="544" colspan="2"> 
+                      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"> 
+                        <input type="submit" name="btn_save" value="save changes">
+                        </font></div>
+                    </td>
+                    <td width="11" bgcolor="#000000">&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#000000" width="45">&nbsp;</td>
+                    <td width="20">&nbsp;</td>
+                    <td width="524"> 
+                      <div align="right"><font face="Arial, Helvetica, sans-serif" size="2">&nbsp; 
+                        </font></div>
+                    </td>
+                    <td width="11" bgcolor="#000000">&nbsp;</td>
+                  </tr>
+                  <tr> 
+                    <td bgcolor="#000000" width="45">&nbsp;</td>
+                    <td width="20" bgcolor="#000000">&nbsp;</td>
+                    <td width="524" bgcolor="#000000">&nbsp;</td>
+                    <td width="11" bgcolor="#000000">&nbsp;</td>
+                  </tr>
+                  <tr bgcolor="#000000"> 
+                    <td width="45">&nbsp;</td>
+                    <td width="20">&nbsp;</td>
+                    <td width="524">&nbsp;</td>
+                    <td width="11">&nbsp;</td>
+                  </tr>
+                </form>
+              </table>
+            </td>
+            <td bgcolor="#000000"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="8"></font></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr> 
+            <td><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="20" height="8"></font></td>
+            <td><img src="/aspenos/images/corner_bl.gif" width="12" height="12"></td>
+            <td bgcolor="#000000" height="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="45" height="5"></font></td>
+            <td><img src="/aspenos/images/corner_br.gif" width="12" height="12"></td>
+            <td><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="20" height="8"></font></td>
+          </tr>
+          <tr> 
+            <td colspan="5"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><img src="/aspenos/images/dot_clear.gif" width="11" height="17"></font></td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+

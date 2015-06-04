@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<IconDefs>
+
+<IconDef name='snow_report' 	alt='Snow Report' 	type='img'
+	default_image='m_sr1.gif'	mouseover_image='m_sr2.gif'
+	select_image='m_sr3.gif'	style_class='' 	label='Snow Report'/>
+
+<IconDef name='hot_deals' 	alt='Hot Deals' 	type='img'
+	default_image='m_hd1.gif'	mouseover_image='m_hd2.gif'
+	select_image='m_hd3.gif'	style_class='' 	label='Hot Deals'/>
+
+<IconDef name='latest_news' 	alt='Latest News' 	type='img'
+	default_image='m_ln1.gif'	mouseover_image='m_ln2.gif'
+	select_image='m_ln3.gif'	style_class='' 	label='Latest News'/>
+
+<IconDef name='press_release' 	alt='Press Release' 	type='img'
+	default_image='m_pr1.gif'	mouseover_image='m_pr2.gif'
+	select_image='m_pr3.gif'	style_class='' 	label='Press Release'/>
+
+<IconDef name='ads' 		alt='Ads' 		type='img'
+	default_image='m_ads1.gif'	mouseover_image='m_ads2.gif'
+	select_image='m_ads3.gif'	style_class='' 	label='Ads'/>
+
+
+</IconDefs>
+

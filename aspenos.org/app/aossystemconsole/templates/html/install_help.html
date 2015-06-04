@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>AspenOS Console</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<font face="Arial"> 
+<p><font size="4"><b><u>Aspen Console - HELP</u></b></font></p>
+</font>
+<table width="594" border="0">
+  <tr> 
+    <td width="17">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td colspan="2"><font face="Arial, Helvetica, sans-serif"><i><font size="3">INSTALLING 
+      A NEW APPLICATION</font></i></font> 
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr> 
+    <td width="17">&nbsp;</td>
+    <td width="17">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td width="546"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="3">Required Files</font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+        <br>
+        In order to install a new application, Aspen needs a JAR (Java ARchive) 
+        file to be uploaded to the server. The files contained within the JAR 
+        need to appear in the directory structure described below.</font></p>
+      <blockquote> 
+        <p><font face="Arial, Helvetica, sans-serif" size="2"><b>/bin<br>
+          /config<br>
+          /data<br>
+          /doc <br>
+          /lib<br>
+          /src </b>(<font color="#0000FF">optional</font>)<b><br>
+          /sql<br>
+          /templates <br>
+          /xml</b></font></p>
+        <blockquote>&nbsp;</blockquote>
+      </blockquote>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">A script in an application's 
+        bin/ directory called <i>dojar.sh</i> has been provided in order to simplify 
+        JAR creation. Once you have changed the JARNAME and CLASSDIR variables 
+        in the <i>dojar.sh </i>script, running it will put all of the application's 
+        files in a JAR file in the lib/ directory.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">See below for a description 
+        of each directory's contents.</font></p>
+      <table width="100%" border="0">
+        <tr> 
+          <td bgcolor="#003333"><font face="Arial, Helvetica, sans-serif" size="2" color="#CCFFFF">&nbsp;&nbsp;<b><font color="#CCFFFF" face="Arial, Helvetica, sans-serif" size="2">Destination&nbsp;&nbsp;&nbsp;&nbsp;</font></b></font></td>
+          <td bgcolor="#003333">&nbsp;&nbsp;<font face="Arial, Helvetica, sans-serif" size="2" color="#CCFFFF"><b><font color="#CCFFFF" face="Arial, Helvetica, sans-serif" size="2">Description</font></b></font></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;&nbsp;/bin</font></b></td>
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="3">&nbsp;&nbsp;helpful 
+            scripts</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font face="Arial, Helvetica, sans-serif" size="2">Contains scripts 
+            that simplify tedious tasks. The script <i>dojar.sh</i> is helpful 
+            to have with an installed application since much of the application 
+            data is taken from the app's JAR file at runtime. So a change to a 
+            properties or template file requires that the JAR be rebuilt in order 
+            for the app to take advantage of the change. </font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font size="2">&nbsp;</font></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;&nbsp;/config</font></b></td>
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="3">&nbsp;&nbsp;set 
+            up data</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font face="Arial, Helvetica, sans-serif" size="2">Configuration 
+            settings for an application can be stored in properties files. Aspen 
+            provides a <i>Properties Loader</i> API that makes it very easy for 
+            your application to retrieve and reload these settings. </font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font size="2">&nbsp;</font></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;&nbsp;/data</font></b></td>
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="3">&nbsp;&nbsp;flat 
+            data files</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font face="Arial, Helvetica, sans-serif" size="2">Not all application 
+            data has to be stored in a database. You can upload flat data files 
+            that your application can easily access with the <i>Data File Loader</i> 
+            API.</font> </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font size="2">&nbsp;</font></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;&nbsp;/lib</font></b></td>
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="3">&nbsp;&nbsp;Java 
+            class files, scripts, etc.</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td> 
+            <div align="left"><font face="Arial, Helvetica, sans-serif" size="2">This 
+              directory must contain at least one JAR file with all of the Java 
+              class files used by your new application. Make sure the package 
+              structure conforms to the <a href="#pkg_guide">packaging guidelines</a>. 
+              </font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;&nbsp;/src</font></b></td>
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="3">&nbsp;&nbsp;(optional) 
+            source code for this application</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font face="Arial, Helvetica, sans-serif" size="2">If you would 
+            like to have the source code for an application distributed along 
+            with the rest of the package, put it in the /src directory.</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font size="2">&nbsp;</font></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;&nbsp;/sql</font></b></td>
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="3">&nbsp;&nbsp;files 
+            with SQL statements</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font face="Arial, Helvetica, sans-serif" size="2">If you specify 
+            that Aspen should create a new database for your application, you 
+            will need to create tables, indices, stored procedures, and records 
+            required by your application. Aspen executes all valid SQL statements 
+            contained in each file in this directory at installation time.</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font size="2">&nbsp;</font></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;&nbsp;/templates</font></b></td>
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="3">&nbsp;&nbsp;HTML, 
+            XML, and email variable templates </font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td> 
+            <p><font face="Arial, Helvetica, sans-serif" size="2">Templates are 
+              used for defining a large amount of nonchanging text along with 
+              tags that an application swaps with variable data. A template can 
+              be any text file that an application can load and perform tag substitutions 
+              on. Most templates contain HTML, XML or the body of an email message. 
+              </font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2">Any static HTML 
+              pages used by your application will easily and efficiently be served 
+              by Aspen. Static HTML filenames must end with the .html extension.</font></p>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font size="2">&nbsp;</font></td>
+        </tr>
+        <tr> 
+          <td bgcolor="#CCCCCC"><b><font face="Arial, Helvetica, sans-serif" size="2">&nbsp;&nbsp;/xml</font></b></td>
+          <td bgcolor="#CCCCCC"><font face="Arial, Helvetica, sans-serif" size="3">&nbsp;&nbsp;XML 
+            docs used primarily for app installation</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td><font face="Arial, Helvetica, sans-serif" size="2">Several XML docs 
+            are required for the operation of an Aspen application. </font></td>
+        </tr>
+        <tr> 
+          <td height="20">&nbsp;</td>
+          <td height="20">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      <div align="center"></div>
+    </td>
+  </tr>
+  <tr>
+    <td width="17">&nbsp;</td>
+    <td width="17">&nbsp;</td>
+    <td width="546"> 
+      <p><font size="3" face="Arial, Helvetica, sans-serif"><a name="pkg_guide">Packaging 
+        Guidelines</a></font><br>
+        <br>
+        <font face="Arial, Helvetica, sans-serif" size="2">It is imperative that 
+        all applications use a common naming convention, or class name conflicts 
+        will occur. Using a reversed registered domain name for your package name 
+        is a good idea because registered domain names are guaranteed to be unique. 
+        For example, applications written by InternalRecords.com would be packaged 
+        like this:</font></p>
+      <blockquote> 
+        <p><font face="Arial, Helvetica, sans-serif" size="2"><b><font face="Courier New, Courier, mono" size="2">com.internalrecords.aspenos.&lt;</font></b><font face="Courier New, Courier, mono" size="2"><i>app 
+          subpackage</i><b>&gt;</b><i> </i></font></font></p>
+      </blockquote>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><br>
+        However, not every developer has access to a registered domain name. For 
+        these application developers, a unique AspenOS.com user ID should be used 
+        so that packages can be uniquely referred to as </font></p>
+      <blockquote> 
+        <p><b><font face="Courier New, Courier, mono" size="2">com.aspenos.app.&lt;</font></b><font face="Courier New, Courier, mono" size="2"><i>user 
+          ID<b>&gt;</b></i><b>.&lt;</b><i>app subpackage&gt;</i></font></p>
+      </blockquote>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Following this simple 
+        protocol will ensure a working environment for everybody, while apps that 
+        fail to do so will be rejected by Aspen or will not work properly.</font></p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<TemplateDefs>
+
+<TemplateDef id='5' name='t5' file_path='t5.template'/>
+<TemplateDef id='6' name='t6' file_path='t6.template'/>
+
+</TemplateDefs>
+

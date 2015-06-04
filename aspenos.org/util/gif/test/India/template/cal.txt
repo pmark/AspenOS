@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<title>Calendar</title>
+</head>
+
+<body bgcolor="#CECE9D">
+<h1 align="center"><font size="6" face="Arial" color="#663300">Calendar</font></h1>
+<br>
+<center>
+<font size="3" face="Arial">
+<table>
+<tr bgcolor="AAAAAA"><td colspan="7">
+<table border="0" width="100%"><tr>
+	<td align="left"><a href="/servlet/ranab.MyCalendarServlet?month=${month}&year=${prevYear}">
+		<img src="/~ranab/images/left_arrow.gif"border="0" width="30" height="20">
+	</a></td>
+	<td align="center"><b>${year}</b></td>
+	<td align="right"><a href="/servlet/ranab.MyCalendarServlet?month=${month}&year=${nextYear}">
+		<img src="/~ranab/images/right_arrow.gif"border="0" width="30" height="20">
+	</a></td>
+</tr></table>
+</td></tr>
+<tr bgcolor="AAAAAA"><td colspan="7">
+	<table border="0" width="100%"><tr>
+	<td align="left"><a href="/servlet/ranab.MyCalendarServlet?month=${prevMonth}&year=${year}">
+		<img src="/~ranab/images/left_arrow.gif"border="0" width="30" height="20">
+	</a></td>
+	<td align="center"><b>${monthStr}</b></td>
+	<td align="right"><a href="/servlet/ranab.MyCalendarServlet?month=${nextMonth}&year=${year}">
+		<img src="/~ranab/images/right_arrow.gif"border="0" width="30" height="20">
+	</a></td>
+</tr></table>
+</td></tr>
+<tr bgcolor="#AAF0AA">
+	<td width="14%" align="center"><b>Sun</b></td>
+	<td width="14%" align="center"><b>Mon</b></td>
+	<td width="14%" align="center"><b>Tue</b></td>
+	<td width="14%" align="center"><b>Wed</b></td>
+	<td width="14%" align="center"><b>Thu</b></td>
+	<td width="14%" align="center"><b>Fri</b></td>
+	<td width="14%" align="center"><b>Sat</b></td>
+</tr>
+${ITR}{INDEX 0 THRU ${data.size}} {<tr>
+	${ITR}{INDEX1 0 THRU ${data[${INDEX}].size}} {
+		${IF}{${INDEX1} == 0}{<td bgcolor="#FFAAAA" width="14%">}{<td bgcolor="#FFFFFF" width="14%">}
+		${data[${INDEX},${INDEX1}]}</td>}
+</tr>
+}
+</table>
+</font>
+</center>
+
+<p>Go back to <a href="/~ranab/index.html">home</a> page.</p>
+
+</body>
+
+</html>

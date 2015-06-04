@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<MenuBtnDefs>
+
+<MenuBtnDef menu_name='admin_menu' icon_name='snow_report' event_name='snow_report' ordinal='1'/>
+<MenuBtnDef menu_name='admin_menu' icon_name='hot_deals' event_name='hot_deals' ordinal='2'/>
+<MenuBtnDef menu_name='admin_menu' icon_name='latest_news' event_name='latest_news' ordinal='3'/>
+<MenuBtnDef menu_name='admin_menu' icon_name='press_release' event_name='press_release' ordinal='4'/>
+<MenuBtnDef menu_name='admin_menu' icon_name='ads' event_name='ads' ordinal='5'/>
+
+</MenuBtnDefs>
+

@@ -1,0 +1,2 @@
+jca util/*.java registry/*.java defs/*.java
+jca server/*.java xml/*.java

@@ -1,0 +1,31 @@
+<form method="post" action="[tag:form_action]" name="[tag:form_name]"> 
+
+<font face="Arial, Helvetica, sans-serif"> 
+
+  <p><font size="3">The template <b><i>[tag:sel_template_name]</i></b> has been updated.</font></p>
+
+  <p><font size="2" color="#3399FF">To 
+    <input type="submit" name="btn_add_resource" value="view templates"
+		onClick="setNextEventName('choose_template')">, click this button.<br>
+	</font></p>
+
+  <p><font size="2"><b>Remember</b> that the templates need to be re-cached 
+    before the changes will appear.<br>
+	<br><font color="#3399FF">To 
+    <input type="submit" name="btn_recache" value="re-cache the templates"
+		onClick="setNextEventName('recache_templates')">, click this button.<br>
+	</font></font></p>
+
+	<p>&nbsp;</p>
+
+<input type="hidden" name="webevent_name" value="[tag:redir_event]">
+<input type="hidden" name="sel_event_name" value="[tag:sel_event_name]">
+<input type="hidden" name="sel_resource_name" value="[tag:sel_resource_name]">
+<input type="hidden" name="sel_template_name" value="[tag:sel_template_name]">
+
+<input type="hidden" name="app_id" value="[tag:app_id]">
+<input type="hidden" name="app_display_name" value="[tag:app_display_name]">
+<input type="hidden" name="reggrp_key" value="[tag:reggrp_key]">
+<input type="hidden" name="reggrp_name" value="[tag:reggrp_name]">
+
+</form>
